@@ -1,0 +1,559 @@
+body.darkTheme {
+    color: #E0E0E0 !important;
+}
+
+body.darkTheme #switch-theme #switch-light-mode {
+    display: block;
+}
+
+body.darkTheme #switch-theme #switch-dark-mode {
+    display: none;
+}
+
+body.darkTheme #main-container {
+    background-color: #161616;
+}
+
+body.darkTheme #content {
+    background-color: #262626;
+}
+
+body.darkTheme #menu,
+body.darkTheme #menu .sidebartoctree,
+body.darkTheme #menu .sidebartoctree li.current,
+body.darkTheme #menu .sidebartoctree li.current ul,
+body.darkTheme #menu .sidebartoctree li:hover ul {
+    background-color: #161616;
+}
+
+body.darkTheme #menu .sidebartoctree {
+    scrollbar-color: #262626 #161616;
+}
+
+body.darkTheme #menu .global-toc-wrapper {
+    border-right: solid 1px #393939;
+}
+
+body.darkTheme #menu .global-toc-wrapper .sidebartoctree::-webkit-scrollbar-thumb {
+    background: #262626;
+    border-color: #161616;
+}
+
+body.darkTheme #menu .global-toc-wrapper .sidebartoctree::-webkit-scrollbar-thumb:hover {
+    background-color: #525252;
+}
+
+
+body.darkTheme #menu .sidebartoctree ul > li > a {
+    color: #C6C6C6;
+}
+
+body.darkTheme #menu .sidebartoctree li a:hover {
+    background: #393939;
+    color: #F4F4F4;
+}
+
+body.darkTheme #menu .sidebartoctree > ul:not(:last-child) > li > a::after,
+body.darkTheme #menu .sidebartoctree > ul:last-child > li:not(:last-child) > a::after {
+    background-image: url("./icons/chevron-down-dark.svg");
+}
+
+body.darkTheme #menu .sidebartoctree li.toctree-l2.has-3rd-level > a::after {
+    background-image: url('./icons/chevron-down-dark-3rd-level.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li > a::before,
+body.darkTheme #menu .sidebartoctree li:hover > a::before,
+body.darkTheme #menu .sidebartoctree ul:first-child > li.current > a::before {
+    background-image: url('./icons/modules/home-dark.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li > a[href$="itoa.html"]::before,
+body.darkTheme #menu .sidebartoctree li:hover > a[href$="itoa.html"]::before,
+body.darkTheme #menu .sidebartoctree ul:first-child > li.current > a[href$="itoa.html"]::before {
+    background-image: url('./icons/modules/itoa-dark.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li > a[href$="monitoring.html"]::before,
+body.darkTheme #menu .sidebartoctree li:hover > a[href$="monitoring.html"]::before,
+body.darkTheme #menu .sidebartoctree ul:first-child > li.current > a[href$="monitoring.html"]::before {
+    background-image: url('./icons/modules/monitoring-dark.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li > a[href$="siem.html"]::before,
+body.darkTheme #menu .sidebartoctree li:hover > a[href$="siem.html"]::before,
+body.darkTheme #menu .sidebartoctree ul:first-child > li.current > a[href$="siem.html"]::before {
+    background-image: url('./icons/modules/siem-dark.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li > a[href$="service-management.html"]::before,
+body.darkTheme #menu .sidebartoctree li:hover > a[href$="service-management.html"]::before,
+body.darkTheme #menu .sidebartoctree ul:first-child > li.current > a[href$="service-management.html"]::before {
+    background-image: url('./icons/modules/service-management-dark.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li > a[href$="introduction.html"]::before,
+body.darkTheme #menu .sidebartoctree li:hover > a[href$="introduction.html"]::before,
+body.darkTheme #menu .sidebartoctree ul:first-child > li.current > a[href$="introduction.html"]::before {
+    background-image: url('./icons/modules/introduction-dark.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li > a[href$="getting-started.html"]::before,
+body.darkTheme #menu .sidebartoctree li:hover > a[href$="getting-started.html"]::before,
+body.darkTheme #menu .sidebartoctree ul:first-child > li.current > a[href$="getting-started.html"]::before {
+    background-image: url('./icons/modules/getting-started-dark.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li > a[href$="howto.html"]::before,
+body.darkTheme #menu .sidebartoctree li:hover > a[href$="howto.html"]::before,
+body.darkTheme #menu .sidebartoctree ul:first-child > li.current > a[href$="howto.html"]::before {
+    background-image: url('./icons/modules/howto-dark.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li > a[href$="troubleshooting.html"]::before,
+body.darkTheme #menu .sidebartoctree li:hover > a[href$="troubleshooting.html"]::before,
+body.darkTheme #menu .sidebartoctree ul:first-child > li.current > a[href$="troubleshooting.html"]::before {
+    background-image: url('./icons/modules/troubleshooting-dark.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li > a[href$="upgrade.html"]::before,
+body.darkTheme #menu .sidebartoctree li:hover > a[href$="upgrade.html"]::before,
+body.darkTheme #menu .sidebartoctree ul:first-child > li.current > a[href$="upgrade.html"]::before {
+    background-image: url('./icons/modules/upgrade-dark.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li > a[href$="glossary.html"]::before,
+body.darkTheme #menu .sidebartoctree li:hover > a[href$="glossary.html"]::before,
+body.darkTheme #menu .sidebartoctree ul:first-child > li.current > a[href$="glossary.html"]::before {
+    background-image: url('./icons/modules/glossary-dark.svg');
+}
+
+body.darkTheme #menu .sidebartoctree ul > li > a:hover::before,
+body.darkTheme #menu .sidebartoctree ul > li.current > a:hover::before {
+    background-image: url('./icons/modules/home-dark-hover.svg');
+}
+
+body.darkTheme #menu .sidebartoctree ul > li > a[href$="itoa.html"]:hover::before,
+body.darkTheme #menu .sidebartoctree ul > li.current > a[href$="itoa.html"]:hover::before {
+    background-image: url('./icons/modules/itoa-dark-hover.svg');
+}
+
+body.darkTheme #menu .sidebartoctree ul > li > a[href$="monitoring.html"]:hover::before,
+body.darkTheme #menu .sidebartoctree ul > li.current > a[href$="monitoring.html"]:hover::before {
+    background-image: url('./icons/modules/monitoring-dark-hover.svg');
+}
+
+body.darkTheme #menu .sidebartoctree ul > li > a[href$="siem.html"]:hover::before,
+body.darkTheme #menu .sidebartoctree ul > li.current > a[href$="siem.html"]:hover::before {
+    background-image: url('./icons/modules/siem-dark-hover.svg');
+}
+
+body.darkTheme #menu .sidebartoctree ul > li > a[href$="service-management.html"]:hover::before,
+body.darkTheme #menu .sidebartoctree ul > li.current > a[href$="service-management.html"]:hover::before {
+    background-image: url('./icons/modules/service-management-dark-hover.svg');
+}
+
+body.darkTheme #menu .sidebartoctree ul > li > a[href$="introduction.html"]:hover::before,
+body.darkTheme #menu .sidebartoctree ul > li.current > a[href$="introduction.html"]:hover::before {
+    background-image: url('./icons/modules/introduction-dark-hover.svg');
+}
+
+body.darkTheme #menu .sidebartoctree ul > li > a[href$="getting-started.html"]:hover::before,
+body.darkTheme #menu .sidebartoctree ul > li.current > a[href$="getting-started.html"]:hover::before {
+    background-image: url('./icons/modules/getting-started-dark-hover.svg');
+}
+
+body.darkTheme #menu .sidebartoctree ul > li > a[href$="howto.html"]:hover::before,
+body.darkTheme #menu .sidebartoctree ul > li.current > a[href$="howto.html"]:hover::before {
+    background-image: url('./icons/modules/howto-dark-hover.svg');
+}
+
+body.darkTheme #menu .sidebartoctree ul > li > a[href$="troubleshooting.html"]:hover::before,
+body.darkTheme #menu .sidebartoctree ul > li.current > a[href$="troubleshooting.html"]:hover::before {
+    background-image: url('./icons/modules/troubleshooting-dark-hover.svg');
+}
+
+body.darkTheme #menu .sidebartoctree ul > li > a[href$="upgrade.html"]:hover::before,
+body.darkTheme #menu .sidebartoctree ul > li.current > a[href$="upgrade.html"]:hover::before {
+    background-image: url('./icons/modules/upgrade-dark-hover.svg');
+}
+
+body.darkTheme #menu .sidebartoctree ul > li > a[href$="glossary.html"]:hover::before,
+body.darkTheme #menu .sidebartoctree ul > li.current > a[href$="glossary.html"]:hover::before {
+    background-image: url('./icons/modules/glossary-dark-hover.svg');
+}
+
+body.darkTheme #menu .sidebartoctree li.toctree-l2.current:not(.has-3rd-level) > a,
+body.darkTheme #menu .sidebartoctree li.current > a.current.reference.internal {
+    color: #F4F4F4;
+    background: #393939;
+    border-left: solid 4px #0BB798;
+}
+
+body.darkTheme #menu .sidebartoctree li.toctree-l2.current > a {
+    color: #F4F4F4;
+}
+
+body.darkTheme #menu .sidebartoctree li.toctree-l2 ul,
+body.darkTheme #menu .sidebartoctree .toctree-l2.current.has-3rd-level,
+body.darkTheme #menu .sidebartoctree .toctree-l2.has-3rd-level a.open {
+    background-color: #262626 !important;
+}
+
+/** Dividers **/
+body.darkTheme #menu .sidebartoctree > ul:not(:last-child)::after {
+    border-bottom: 1px solid #393939;
+}
+
+/** Homepage **/
+body.darkTheme #document .description .description-title,
+body.darkTheme #document .bx--tile a {
+    color: #F4F4F4;
+}
+
+body.darkTheme #document .description .description-content {
+    color: #A8A8A8;
+}
+
+body.darkTheme #document .bx--tile {
+    background-color: #262626;
+}
+
+body.darkTheme #document .bx--tile .image {
+    background-color: #6F6F6F;
+}
+
+body.darkTheme #document .row.boxes .col {
+    border-top: solid 1px #161616;
+}
+
+/** General document **/
+body.darkTheme #content .document p {
+    color: #E0E0E0;
+}
+
+body.darkTheme #content h1,
+body.darkTheme #content h2,
+body.darkTheme #content h3,
+body.darkTheme #content h4,
+body.darkTheme #content h5,
+body.darkTheme #content h6 {
+    color: #F4F4F4;
+}
+
+#content .document h1 a,
+#content .document h2 a,
+#content .document h3 a,
+#content .document h4 a,
+#content .document h5 a,
+#content .document h6 a {
+    color: #F4F4F4;
+}
+
+body.darkTheme #content code {
+    background-color: #393939;
+    color: #C6C6C6;
+}
+
+body.darkTheme #content a.headerlink {
+    background-image: url("icons/link-dark.svg");
+}
+
+body.darkTheme #content a.headerlink:hover {
+    opacity: 1;
+    background-image: url("icons/link-dark-hover.svg") !important;
+}
+
+body.darkTheme #content .document .body .figure,
+body.darkTheme #content .document .body table,
+body.darkTheme .admonition,
+body.darkTheme .topic,
+body.darkTheme #content .container.codeblock .highlight,
+body.darkTheme #content .document .versionadded,
+body.darkTheme #content .document .versionchanged,
+body.darkTheme #content .document .deprecated
+{
+    background-color: #393939;
+}
+
+body.darkTheme #content .document .body table thead,
+body.darkTheme #content .document .body table tbody tr {
+    border-bottom: 1px solid #525252;
+}
+
+body.darkTheme #content .document .body table thead .head p {
+    color: #F4F4F4;
+}
+
+body.darkTheme #content .document .body table tbody tr td p {
+    color: #E0E0E0;
+}
+
+body.darkTheme #content .admonition code {
+    background-color: #525252;
+}
+
+body.darkTheme #content .highlight {
+    background-color: #393939;
+}
+
+body.darkTheme #content .highlight .copy {
+    background-image: url('./icons/copy-white.svg');
+}
+
+body.darkTheme #content .highlight .copy:hover {
+    background-color: #525252;
+}
+
+body.darkTheme #content .container.codeblock .highlight pre,
+body.darkTheme #content .container.codeblock .highlight pre .c1,
+body.darkTheme #content .container.codeblock .highlight pre .nb,
+body.darkTheme #content .container.codeblock .highlight pre .nt,
+body.darkTheme #content .container.codeblock .highlight pre .kc {
+    color: #F4F4F4;
+}
+
+/** Local toc **/
+body.darkTheme #local-toc-nav {
+    border-left: solid 1px #393939;
+}
+
+body.darkTheme #local-toc-nav a {
+    color: #e0e0e0;
+}
+
+body.darkTheme .mobile-local-toc .expand-icon {
+    background-image: url('./icons/chevron-down-dark.svg');
+}
+
+body.darkTheme #local-toc-nav a.active {
+    color: #0A9D81;
+}
+
+body.darkTheme .mobile-local-toc {
+    background-color: #161616;
+}
+
+body.darkTheme .mobile-local-toc.menu-close .nav-link.active {
+    color: #E0E0E0 !important;
+}
+
+/** Search page **/
+body.darkTheme #search-results li {
+    background-color: #161616;
+}
+
+body.darkTheme #search-results li:hover {
+    background: #393939;
+}
+
+body.darkTheme #search-results li a {
+    color: #F4F4F4;
+}
+
+body.darkTheme #search-results li a::before {
+    background: url('icons/arrow-right-dark.svg');
+    background-size: contain;
+}
+
+body.darkTheme #search-results li .context {
+    color: #A8A8A8;
+}
+
+body.darkTheme #search-results li:hover a,
+body.darkTheme #search-results li:hover .context {
+    color: #FFFFFF;
+}
+
+body.darkTheme #search-results li:hover a::before {
+    background: url('icons/arrow-right.svg');
+    background-size: contain;
+}
+
+/** Image **/
+body.darkTheme #content .figure .caption {
+    color: #A8A8A8;
+}
+
+/* TOC */
+body.darkTheme #document .body .toctree-wrapper ul li {
+    background: url("./icons/jump-link.svg") no-repeat 0 2px;
+}
+
+body.darkTheme #document .body .toctree-wrapper ul li a {
+    color: #E0E0E0 !important;
+}
+
+body.darkTheme .highlight .copy span.tooltip {
+     background-color: #F4F4F4;
+ }
+
+body.darkTheme .highlight .copy span.tooltip span.text {
+    color: #161616;
+}
+
+body.darkTheme #content .highlight pre::-webkit-scrollbar-thumb {
+    background-color: #262626  !important;
+}
+
+body.darkTheme #content .highlight pre:hover::-webkit-scrollbar-thumb {
+    background-color: #525252  !important;
+}
+
+/* Roles */
+body.darkTheme #content .document .reference .xref {
+    color: #E0E0E0;
+}
+
+body.darkTheme #content .document abbr {
+    border-color: #E0E0E0;
+}
+
+body.darkTheme #content .document .file,
+body.darkTheme #content .document .command {
+    background: #393939;
+    color: #E0E0E0;
+}
+
+body.darkTheme #content .document .guilabel {
+    background: #6F6F6F;
+    color: #FFFFFF;
+}
+
+body.darkTheme .admonition p,
+body.darkTheme .admonition.hint .admonition-title,
+body.darkTheme .admonition.tip .admonition-title,
+body.darkTheme .topic .topic-title,
+body.darkTheme .rubric,
+body.darkTheme #content .document .versionadded p,
+body.darkTheme #content .document .versionchanged p,
+body.darkTheme #content .document .deprecated p
+{
+    color: #F4F4F4 !important;
+}
+
+body.darkTheme .admonition.note .admonition-title {
+    font-weight: 500 !important;
+}
+
+body.darkTheme .admonition.warning {
+    border-left-color: #FFAA44 !important;
+}
+
+body.darkTheme .admonition.warning .admonition-title {
+    color: #FFAA44 !important;
+}
+
+body.darkTheme .topic p {
+    color: #A8A8A8 !important;
+}
+
+body.darkTheme #content .document .versionmodified.added {
+    background-color: #DAF0EC;
+}
+
+body.darkTheme #content .document .versionmodified.changed {
+    background-color: #FFEBD2;
+}
+
+body.darkTheme #content .document .versionmodified.deprecated {
+    background-color: #FEE4E6;
+}
+
+@media (max-width: 850px) {
+    body.darkTheme #document .row.boxes .col:not(:nth-child(1)):not(:nth-child(2)) {
+        border-top-color: #000000;
+    }
+
+    body.darkTheme #document .row.boxes .col:nth-child(1):not(:last-child),
+    body.darkTheme #document .row.boxes .col:nth-child(3):not(:last-child),
+    body.darkTheme #document .row.boxes .col:nth-child(6):not(:last-child),
+    body.darkTheme #document .row.boxes .col:nth-child(9):not(:last-child),
+    body.darkTheme #document .row.boxes .col:nth-child(11):not(:last-child),
+    body.darkTheme #document .row.boxes .col:nth-child(14):not(:last-child) {
+        border-right: solid 1px #000000;
+    }
+}
+
+@media (min-width: 851px) {
+    body.darkTheme #document .row.boxes .col:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
+        border-top-color: #000000;
+    }
+
+    body.darkTheme #document .row.boxes .col:nth-child(2),
+    body.darkTheme #document .row.boxes .col:nth-child(4n + 2) {
+        border-left: solid 1px #000000;
+        border-right: solid 1px #161616;
+    }
+
+    body.darkTheme #document .row.boxes .col:nth-child(2):not(:last-child),
+    body.darkTheme #document .row.boxes .col:nth-child(4n + 2):not(:last-child) {
+        border-right: solid 1px #000000;
+    }
+}
+
+/*! Base16 Monokai Dark by Wimer Hazenberg (http://www.monokai.nl) */
+body.darkTheme .highlight, .highlight pre, .highlight table { color: #f9f8f5 }
+body.darkTheme .highlight .c { color: #75715e } /* Comment */
+body.darkTheme .highlight .err { color: #f92672 } /* Error */
+body.darkTheme .highlight .k { color: #ae81ff } /* Keyword */
+body.darkTheme .highlight .l { color: #fd971f } /* Literal */
+body.darkTheme .highlight .n, body.darkTheme .highlight .h { color: #f9f8f5 } /* Name */
+body.darkTheme .highlight .o { color: #a1efe4 } /* Operator */
+body.darkTheme .highlight .p { color: #f9f8f5 } /* Punctuation */
+body.darkTheme .highlight .cm { color: #75715e } /* Comment.Multiline */
+body.darkTheme .highlight .cp { color: #75715e } /* Comment.Preproc */
+body.darkTheme .highlight .c1 { color: #75715e } /* Comment.Single */
+body.darkTheme .highlight .cs { color: #75715e } /* Comment.Special */
+body.darkTheme .highlight .gd { color: #f92672 } /* Generic.Deleted */
+body.darkTheme .highlight .ge { font-style: italic } /* Generic.Emph */
+body.darkTheme .highlight .gh { color: #f9f8f5; font-weight: bold } /* Generic.Heading */
+body.darkTheme .highlight .gi { color: #a6e22e } /* Generic.Inserted */
+body.darkTheme .highlight .gp { color: #75715e; font-weight: bold } /* Generic.Prompt */
+body.darkTheme .highlight .gs { font-weight: bold } /* Generic.Strong */
+body.darkTheme .highlight .gu { color: #a1efe4; font-weight: bold } /* Generic.Subheading */
+body.darkTheme .highlight .kc { color: #ae81ff } /* Keyword.Constant */
+body.darkTheme .highlight .kd { color: #ae81ff } /* Keyword.Declaration */
+body.darkTheme .highlight .kn { color: #a1efe4 } /* Keyword.Namespace */
+body.darkTheme .highlight .kp { color: #ae81ff } /* Keyword.Pseudo */
+body.darkTheme .highlight .kr { color: #ae81ff } /* Keyword.Reserved */
+body.darkTheme .highlight .kt { color: #f4bf75 } /* Keyword.Type */
+body.darkTheme .highlight .ld { color: #a6e22e } /* Literal.Date */
+body.darkTheme .highlight .m { color: #fd971f } /* Literal.Number */
+body.darkTheme .highlight .s { color: #a6e22e } /* Literal.String */
+body.darkTheme .highlight .na { color: #66d9ef } /* Name.Attribute */
+body.darkTheme .highlight .nb { color: #f9f8f5 } /* Name.Builtin */
+body.darkTheme .highlight .nc { color: #f4bf75 } /* Name.Class */
+body.darkTheme .highlight .no { color: #f92672 } /* Name.Constant */
+body.darkTheme .highlight .nd { color: #a1efe4 } /* Name.Decorator */
+body.darkTheme .highlight .ni { color: #f9f8f5 } /* Name.Entity */
+body.darkTheme .highlight .ne { color: #f92672 } /* Name.Exception */
+body.darkTheme .highlight .nf { color: #66d9ef } /* Name.Function */
+body.darkTheme .highlight .nl { color: #f9f8f5 } /* Name.Label */
+body.darkTheme .highlight .nn { color: #f4bf75 } /* Name.Namespace */
+body.darkTheme .highlight .nx { color: #66d9ef } /* Name.Other */
+body.darkTheme .highlight .py { color: #f9f8f5 } /* Name.Property */
+body.darkTheme .highlight .nt { color: #a1efe4 } /* Name.Tag */
+body.darkTheme .highlight .nv { color: #f92672 } /* Name.Variable */
+body.darkTheme .highlight .ow { color: #a1efe4 } /* Operator.Word */
+body.darkTheme .highlight .w { color: #f9f8f5 } /* Text.Whitespace */
+body.darkTheme .highlight .mf { color: #fd971f } /* Literal.Number.Float */
+body.darkTheme .highlight .mh { color: #fd971f } /* Literal.Number.Hex */
+body.darkTheme .highlight .mi { color: #fd971f } /* Literal.Number.Integer */
+body.darkTheme .highlight .mo { color: #fd971f } /* Literal.Number.Oct */
+body.darkTheme .highlight .sb { color: #a6e22e } /* Literal.String.Backtick */
+body.darkTheme .highlight .sc { color: #f9f8f5 } /* Literal.String.Char */
+body.darkTheme .highlight .sd { color: #75715e } /* Literal.String.Doc */
+body.darkTheme .highlight .s2 { color: #a6e22e } /* Literal.String.Double */
+body.darkTheme .highlight .se { color: #fd971f } /* Literal.String.Escape */
+body.darkTheme .highlight .sh { color: #a6e22e } /* Literal.String.Heredoc */
+body.darkTheme .highlight .si { color: #fd971f } /* Literal.String.Interpol */
+body.darkTheme .highlight .sx { color: #a6e22e } /* Literal.String.Other */
+body.darkTheme .highlight .sr { color: #a6e22e } /* Literal.String.Regex */
+body.darkTheme .highlight .s1 { color: #a6e22e } /* Literal.String.Single */
+body.darkTheme .highlight .ss { color: #a6e22e } /* Literal.String.Symbol */
+body.darkTheme .highlight .bp { color: #f9f8f5 } /* Name.Builtin.Pseudo */
+body.darkTheme .highlight .vc { color: #f92672 } /* Name.Variable.Class */
+body.darkTheme .highlight .vg { color: #f92672 } /* Name.Variable.Global */
+body.darkTheme .highlight .vi { color: #f92672 } /* Name.Variable.Instance */
+body.darkTheme .highlight .il { color: #fd971f } /* Literal.Number.Integer.Long */

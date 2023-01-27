@@ -1,0 +1,295 @@
+#menu {
+    background: #fff;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    max-width: 300px !important;
+    min-height: calc(100vh - 56px);
+    padding: 0;
+    position: absolute;
+    right: 100vw;
+    transition: right 0.5s cubic-bezier(0.2, 0, 0.38, 0.9);
+    z-index: 9;
+}
+
+#menu .sphinxsidebar {
+    max-width: 300px;
+    width: 300px;
+}
+
+#menu .global-toc-wrapper {
+    top: 48px;
+    bottom: 0;
+    max-width: 300px;
+    border-right: solid 1px #E0E0E0;
+}
+
+#menu .global-toc-wrapper .sidebartoctree::-webkit-scrollbar {
+    width: 14px;
+}
+
+#menu .global-toc-wrapper .sidebartoctree::-webkit-scrollbar-thumb {
+    background: #E0E0E0;
+    border-radius: 8px;
+    border: solid 3px white;
+}
+
+#menu .global-toc-wrapper .sidebartoctree::-webkit-scrollbar-thumb:hover {
+    background-color: #A8A8A8;
+}
+
+#menu .sidebartoctree {
+    overflow-y: auto;
+    background: #fff;
+    position: relative;
+    scrollbar-color: #E0E0E0 #FFF;
+    scrollbar-width: thin;
+}
+
+#menu .sidebartoctree ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* section divider */
+#menu .sidebartoctree > ul:not(:last-child)::after {
+    border-bottom: 1px solid #E0E0E0;
+    content: " ";
+    margin: 0.5rem 1rem;
+    width: calc(100% - 2rem);
+    height: 1px;
+    position: absolute;
+}
+
+#menu .sidebartoctree ul > li > ul {
+    transition: max-height 0.5s;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#menu .sidebartoctree ul.open {
+    max-height: 1000px;
+}
+
+#menu .sidebartoctree li a {
+    padding-left: 2rem;
+    display: inline-block;
+    min-height: 2rem;
+    width: 100%;
+    line-height: 18.2px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #525252;
+}
+
+#menu .sidebartoctree li.toctree-l2 a {
+    font-weight: 400;
+    padding-left: 3.875rem;
+}
+
+#menu .sidebartoctree li.toctree-l3 a {
+    font-weight: 400;
+    padding-left: 4.875rem;
+}
+
+#menu .sidebartoctree li.toctree-l2 ul,
+#menu .sidebartoctree .toctree-l2.current.has-3rd-level,
+#menu .sidebartoctree .toctree-l2.has-3rd-level a.open {
+    background-color: #f4f4f4 !important;
+}
+
+#menu .sidebartoctree li.toctree-l2:not(.has-3rd-level) ul {
+    display: none;
+}
+
+#menu .sidebartoctree li a:hover {
+    background: #E0E0E0;
+    color: #161616;
+}
+
+#menu .sidebartoctree li:hover ul {
+    background: #FFFFFF;
+}
+
+#menu .sidebartoctree > ul > li {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#menu .sidebartoctree > ul > li > a {
+    font-weight: 500;
+    min-height: 2rem;
+    height: auto;
+    line-height: 18px;
+    padding-left: 44px;
+    padding-right: 44px;
+    position: relative;
+    width: 100%;
+}
+
+#menu .sidebartoctree > ul > li > a::before,
+#menu .sidebartoctree > ul > li:hover > a::before {
+    background-image: url('./icons/modules/home.svg');
+    background-size: contain;
+    content: "";
+    width: 17.5px;
+    height: 17.5px;
+    display: inline-block;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 1rem;
+    margin-left: 0;
+    top: 7px;
+}
+
+#menu .sidebartoctree > ul > li > a[href$="introduction.html"]::before,
+#menu .sidebartoctree > ul > li:hover > a[href$="introduction.html"]::before {
+    background-image: url('./icons/modules/introduction.svg');
+}
+
+#menu .sidebartoctree > ul > li > a[href$="getting_started.html"]::before,
+#menu .sidebartoctree > ul > li:hover > a[href$="getting_started.html"]::before {
+    background-image: url('./icons/modules/getting-started.svg');
+}
+
+#menu .sidebartoctree > ul > li > a[href$="full_restful_api.html"]::before,
+#menu .sidebartoctree > ul > li:hover > a[href$="full_restful_api.html"]::before {
+    background-image: url('./icons/modules/app-connectivity.svg');
+}
+
+#menu .sidebartoctree > ul > li > a[href$="monitoring_integrations.html"]::before,
+#menu .sidebartoctree > ul > li:hover > a[href$="monitoring_integrations.html"]::before {
+    background-image: url('./icons/modules/shape-intersect.svg');
+}
+
+#menu .sidebartoctree > ul > li > a[href$="release_notes.html"]::before,
+#menu .sidebartoctree > ul > li:hover > a[href$="release_notes.html"]::before {
+    background-image: url('./icons/modules/report.svg');
+}
+
+#menu .sidebartoctree > ul > li > a[href$="/learn/"]::before,
+#menu .sidebartoctree > ul > li:hover > a[href$="/learn/"]::before {
+    background-image: url('./icons/modules/document.svg');
+}
+
+#menu .sidebartoctree > ul > li > a[href$="/learn/server/"]::before,
+#menu .sidebartoctree > ul > li:hover > a[href$="/learn/server/"]::before {
+    background-image: url('./icons/modules/document.svg');
+}
+
+#menu .sidebartoctree > ul > li > a[href$="get_in_touch.html"]::before,
+#menu .sidebartoctree > ul > li:hover > a[href$="get_in_touch.html"]::before {
+    background-image: url('./icons/modules/group.svg');
+}
+
+#menu .sidebartoctree li.toctree-l2.has-3rd-level > a {
+    position: relative;
+}
+
+#menu .sidebartoctree > ul:not(:last-child) > li > a::after,
+#menu .sidebartoctree li.toctree-l2.has-3rd-level > a::after,
+#menu .sidebartoctree > ul:last-child > li:not(:last-child) > a::after {
+    background-image: url('./icons/chevron-down.svg');
+    content: "";
+    width: 20px;
+    height: 17.5px;
+    display: inline-block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 1rem;
+    margin-right: 0;
+    top: 7px;
+    transition: transform 0.5s cubic-bezier(0.2, 0, 0.38, 0.9);
+    transform: rotate(0deg);
+}
+
+#menu .sidebartoctree li.toctree-l2.has-3rd-level > a::after {
+    background-image: url('./icons/chevron-down-3rd-level.svg');
+}
+
+#menu .sidebartoctree ul > li > a:hover::before {
+    background-image: url('./icons/modules/home-black.svg');
+}
+
+#menu .sidebartoctree ul > li > a[href$="introduction.html"]:hover::before {
+    background-image: url('./icons/modules/introduction-black.svg');
+}
+
+#menu .sidebartoctree ul > li > a[href$="getting_started.html"]:hover::before {
+    background-image: url('./icons/modules/getting-started-black.svg');
+}
+
+#menu .sidebartoctree ul > li > a[href$="full_restful_api.html"]:hover::before {
+    background-image: url('./icons/modules/app-connectivity-black.svg');
+}
+
+#menu .sidebartoctree ul > li > a[href$="monitoring_integrations.html"]:hover::before {
+    background-image: url('./icons/modules/shape-intersect-black.svg');
+}
+
+#menu .sidebartoctree ul > li > a[href$="release_notes.html"]:hover::before {
+    background-image: url('./icons/modules/report-black.svg');
+}
+
+#menu .sidebartoctree ul > li > a[href$="/learn/"]:hover::before {
+    background-image: url('./icons/modules/document-black.svg');
+}
+
+#menu .sidebartoctree ul > li > a[href$="/learn/server/"]:hover::before {
+    background-image: url('./icons/modules/document-black.svg');
+}
+
+#menu .sidebartoctree ul > li > a[href$="get_in_touch.html"]:hover::before {
+    background-image: url('./icons/modules/group-black.svg');
+}
+
+#menu .sidebartoctree ul > li.current > ul.current {
+    max-height: initial;
+}
+
+#menu .sidebartoctree > ul > li > a.open::after,
+#menu .sidebartoctree li.toctree-l2.has-3rd-level > a.open::after,
+#menu .sidebartoctree > ul > li.current > a::after {
+    transform: rotate(180deg);
+    top: 9px;
+}
+
+#menu a:hover{
+    text-decoration: none !important;
+}
+
+#menu .sidebartoctree li.current ul {
+    background: #FFFFFF;
+}
+
+#menu .sidebartoctree li.toctree-l2.current:not(.has-3rd-level) > a,
+#menu .sidebartoctree li.current > a.current.reference.internal {
+    background: #E0E0E0;
+    color: #161616;
+    border-left: solid 4px #0A9D81;
+    padding-left: calc(3.875rem - 4px);
+}
+
+#menu .sidebartoctree li.toctree-l2.current > a {
+    color: #161616;
+    font-weight: 500;
+}
+
+#menu .sidebartoctree li.current > a.current.reference.internal::before {
+    left: calc(1rem - 4px);
+}
+
+#menu .sidebartoctree li.current > a.current.reference.internal {
+    background: #E0E0E0;
+    color: #161616;
+    border-left: solid 4px #0A9D81;
+    padding-left: calc(3.875rem - 4px);
+}
+
+#menu .sidebartoctree li.toctree-l3.current > a,
+#menu .sidebartoctree li.toctree-l3.current > a.current.reference.internal {
+    padding-left: calc(4.875rem - 4px);
+}

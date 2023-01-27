@@ -1,0 +1,14 @@
+{
+  "NetEye SIEM": [
+    "/siem/concepts.html",
+    "/siem/configuration.html",
+    "/siem/advanced-topics.html",
+    "/troubleshooting/siem.html"
+  ],
+  "Getting Started": [
+    "/getting_started.html",
+    "/getting_started/install.html",
+    "/getting_started/windows_start_button.html",
+    "/getting_started/windows_settings.html"
+  ]
+}

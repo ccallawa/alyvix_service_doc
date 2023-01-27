@@ -1,0 +1,221 @@
+{%- extends "basic/layout.html" %}
+{% set css_files = css_files + ['_static/bootstrap.min.css'] %}
+{% set script_files = script_files + ['_static/bootstrap.bundle.min.js'] %}
+{% set css_files = css_files + ['_static/neteye-dark.css'] %}
+{% macro breadcrumb() %}
+{% include "breadcrumb.html" %}
+{% endmacro %}
+
+
+{% block htmltitle %}
+<!--
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    var isDarkTheme = (getCookie('neteye-userguide-theme') === 'true');
+    if (isDarkTheme) {
+        document.querySelector('html').style.backgroundColor = '#262626';
+    }
+</script>
+-->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+{{ super() }}
+{% endblock %}
+
+{%- block css %}
+<link rel="stylesheet" href="{{pathto('_static/plex.css', 1)|e}}" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+{{ super() }}
+{%- endblock %}
+
+{%- block scripts %}
+<!-- <script src="{{pathto('_static/js.cookie.min.js', 1)|e}}" async></script> -->
+<script src="{{pathto('_static/neteye.js', 1)|e}}" async></script>
+{{ super() }}
+{%- endblock %}
+
+{%- block header %}
+{%- include "topbar.html" %}
+{%- endblock %}
+
+{%- block body_tag %}
+    <body data-spy="scroll" data-offset="48" data-target="#local-toc-nav">
+    <script>
+        if (isDarkTheme) {
+            document.querySelector('body').classList.add('darkTheme');
+        }
+    </script>
+{%- endblock %}
+
+{%- block relbar1 %}{% endblock %}
+
+{%- block content %}
+    <div id="main-container" class="container-fluid">
+        <div class="row">
+            {{ super() }}
+{% endblock %}
+
+{%- block sidebar1 %}
+            <div id="menu" class="col-xl-auto">
+                {{ sidebar() }}
+            </div>
+
+            <div id="content" class="col">
+                <div class="row" id="banner">
+                    <!-- <div class="banner-gradient"> -->
+                        <div class="col hide-in-small-screen"></div>
+                        <div class="col main-content">
+                            <div class="row">
+                                <div class="col left-column">
+                                        <div id="breadcrumb-container">{%- block breadcrumb1 %}{{breadcrumb()}}{% endblock %}</div>
+                                        <h1 class="banner-title">{{ title|striptags|e }}</h1>
+                                </div>
+                                <div class="col right-column"></div>
+                            </div>
+                        </div>
+                        <div class="col hide-in-small-screen"></div>
+                    <!-- </div> -->
+                </div>
+
+                <div class="d-md-none mobile-local-toc menu-close">
+                    <div class="expand-icon"></div>
+                    {%- include "localtoc.html" %}
+
+                    <script>
+                        function elementIsVisibleInContainer(elemSelector, containerSelector) {
+                            var container = $(containerSelector);
+                            var contHeight = container.height();
+
+                            var elem = $(elemSelector)
+                            var elemTop = elem.offset().top - container.offset().top;
+                            var elemBottom = elemTop + elem.height();
+
+                            var isTotal = (elemTop >= 0 && elemBottom <= contHeight);
+                            var isPart = ((elemTop < 0 && elemBottom > 0 ) || (elemTop > 0 && elemTop <= container.height()));
+
+                            return isTotal || isPart ;
+                        }
+
+                        $(document).ready(function() {
+                            $(".mobile-local-toc #local-toc-nav .nav a").hide();
+                            var el = $(".mobile-local-toc #local-toc-nav .nav a.active").last();
+                            if (el.length) {
+                                el.show();
+                            } else {
+                                $(".mobile-local-toc #local-toc-nav .nav a").first().show();
+                            }
+                        });
+
+                        $(window).on('activate.bs.scrollspy', function () {
+                            if (!$('.mobile-local-toc').hasClass('menu-close')) {
+                                return;
+                            }
+
+                            $(".mobile-local-toc #local-toc-nav .nav a").hide();
+                            $(".mobile-local-toc #local-toc-nav .nav a.active").last().show();
+
+                            /* Scroll the local toc if the active element is not visible */
+                            var activeElements = document.querySelectorAll('.right-column #local-toc-nav .nav-link.active');
+                            if (activeElements.length) {
+                                var activeElement = activeElements[activeElements.length - 1];
+                                var container = document.querySelector(".right-column #local-toc-nav > .nav");
+                                if (!elementIsVisibleInContainer(activeElement, container)) {
+                                    container.scrollTop = activeElement.offsetTop;
+                                }
+                            }
+                        });
+
+                        $(document).on('click', '.mobile-local-toc.menu-close', function() {
+                            console.log("OPEN");
+                            $('.mobile-local-toc').toggleClass('menu-close');
+                            $(".mobile-local-toc #local-toc-nav .nav a").show();
+                        });
+
+                        $(document).on('click', '.mobile-local-toc:not(.menu-close) .expand-icon, .mobile-local-toc:not(.menu-close) .nav-link', function() {
+                            console.log("close");
+                            $('.mobile-local-toc').toggleClass('menu-close');
+                            $(".mobile-local-toc #local-toc-nav .nav a").hide();
+                            $(".mobile-local-toc #local-toc-nav .nav a.active").last().show();
+                        });
+                    </script>
+                </div>
+
+                <div class="row" id="document">
+                    <div class="col hide-in-small-screen"></div>
+                    <div class="col main-content">
+                        <div class="row">
+                            <div class="col left-column">
+{% endblock %}
+
+{%- block sidebarlogo %}{% endblock %}
+{%- block sidebar2 %}{% endblock %}
+{%- block relbar2 %}{% endblock %}
+
+
+{%- block footer %}
+                            </div>
+                            {% block rxColumn %}
+                            <div class="col right-column">
+                                <!--                            <div class="d-none d-xl-block col-xl-3">-->
+                                {%- include "localtoc.html" %}
+                            </div>
+                            {% endblock %}
+                        </div>
+                    </div>
+                    <div class="col hide-in-small-screen"></div>
+                </div>
+
+                {%- block bottom_nav -%}
+                <div id="bottom-nav" class="row">
+                    <div class="col hide-in-small-screen"></div>
+                    <div class="col main-content">
+                        <ul class="nav nav-pills nav-fill">
+                            {%- if prev -%}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ prev.link|e }}" title="{{ prev.title }}">
+                                    <div>
+                                        <span class="d-block static-title">Previous</span>
+                                        <span class="d-block">{{ prev.title }}</span>
+                                    </div>
+                                </a>
+                            </li>
+                            {% endif -%}
+                            {%- if next -%}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ next.link|e }}" title="{{ next.title }}">
+                                    <div>
+                                        <span class="d-block static-title">Next</span>
+                                        <span class="d-block">{{ next.title }}</span>
+                                    </div>
+                                </a>
+                            </li>
+                            {%- endif -%}
+                        </ul>
+                    </div>
+                    <div class="col hide-in-small-screen"></div>
+                </div>
+                {% include "footer.html" %}
+                <!-- {% include "cookiebanner.html" %} -->
+                {%- endblock -%}
+            </div>
+        </div>
+    </div>  <!-- End container -->
+{%- endblock %}

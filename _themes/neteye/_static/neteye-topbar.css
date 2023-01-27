@@ -1,0 +1,315 @@
+#topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 8000;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    background-color: #161616;
+    border-bottom: 1px solid #393939;
+    max-width: 100vw;
+}
+
+#topbar .bx--header__action {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    display: inline-block;
+    padding: 12px;
+    background: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    width: 3rem;
+    height: 3rem;
+    border: .125rem solid transparent;
+    transition: background-color .11s,border-color .11s;
+}
+
+#topbar .bx--header__menu-toggle {
+    display: none;
+}
+
+#topbar .bx--header__global {
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+#topbar button:hover,
+#topbar nav#change-version:hover {
+    cursor: pointer;
+    background-color: #393939;
+}
+
+#topbar button:focus {
+    outline: none;
+}
+
+#topbar .bx--header__name {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375;
+    letter-spacing: 0;
+    transition: opacity .11s cubic-bezier(.2,0,.38,.9);
+    color: #fff;
+    text-decoration: none;
+    left: 3rem;
+    white-space: nowrap;
+    padding: 0 1rem;
+    height: 3rem;
+    border-top: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    width: 299px;
+    z-index: 3;
+}
+
+#topbar .bx--header__name #mobile-neteye-logo {
+    display: none;
+}
+
+#topbar .bx--header__menu-bar {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topbar .bx--header__menu-bar .bx--header__submenu {
+    position: relative;
+}
+
+#topbar .bx--header__menu-bar .bx--header__submenu a.bx--header__menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    color: #c6c6c6;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    letter-spacing: 0;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: background-color 110ms,border-color 110ms,color 110ms;
+}
+
+#topbar .bx--header__name span {
+    font-weight: 600;
+}
+
+#searchform {
+    margin-right: auto;
+    position: relative;
+    display: flex;
+}
+
+#topbar .GlobalSearch-module--container {
+    position: relative;
+    display: flex;
+    max-width: 400px;
+    width: 400px;
+    height: 3rem;
+    background-color: #262626;
+    color: #fff;
+    transition: max-width .11s cubic-bezier(.2,0,.38,.9),background .11s cubic-bezier(.2,0,.38,.9);
+}
+#topbar .GlobalSearch-module--container.mobile-version {
+    display: none;
+}
+
+#topbar .GlobalSearch-module--inputWrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
+#topbar .GlobalSearch-module--inputWrapper input {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.375;
+    letter-spacing: 0;
+    color: #fff;
+    caret-color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #393939;
+    outline: none;
+    width: 100%;
+    height: 3rem;
+    padding: 0;
+    padding-left: 1rem;
+    transition: opacity .11s cubic-bezier(.2,0,.38,.9);
+}
+
+#topbar .GlobalSearch-module--inputWrapper .GlobalSearch-module--searchButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #393939;
+    padding: 0;
+    flex-shrink: 0;
+    opacity: 1;
+    transition: background-color .11s cubic-bezier(.2,0,.38,.9),opacity .11s cubic-bezier(.2,0,.38,.9);
+}
+
+#topbar .GlobalSearch-module--inputWrapper .GlobalSearch-module--searchButton img {
+    height: 20px;
+    width: 20px;
+}
+
+#switch-theme img, #toggle-menu {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+#switch-theme #switch-light-mode {
+    display: none;
+}
+
+#version-chevron-down {
+    width: 10px;
+    margin-left: 5px;
+}
+
+#change-version .dropdown-toggle {
+    height: 100%;
+    line-height: 2rem;
+    background: transparent;
+    border: solid 2px transparent;
+    border-radius: 0;
+    cursor: pointer;
+    box-shadow: none !important;
+    font-size: 0.875rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#change-version .dropdown-toggle::after {
+    border: 0;
+    background-image: url("./icons/chevron-down-dark.svg");
+    width: 15px;
+    height: 15px;
+    top: calc(50% - 7.5px);
+    position: relative;
+    margin-left: 11.5px;
+    transition: transform cubic-bezier(.2,0,.38,.9) 110ms;
+}
+
+#change-version .dropdown-toggle[aria-expanded="true"] {
+    border-color: #FFFFFF;
+}
+
+#change-version .dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+#change-version .dropdown-menu {
+    border-radius: 0;
+    background-color: #262626;
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+    min-width: auto;
+    transform: none !important;
+    right: 0;
+    left: unset !important;
+    top: 48px !important;
+}
+
+#change-version .dropdown-menu a {
+    color: #c6c6c6;
+    padding: 0 1rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 40px;
+    height: 48px;
+    border: solid 2px transparent;
+    padding-right: calc(1rem + 14.5px);
+}
+
+#change-version .dropdown-menu a:hover {
+    border-radius: 0;
+    background-color: #393939;
+    color: #F4F4F4;
+}
+
+#change-version .mobile-version-label {
+    display: none;
+}
+
+@media (max-width: 1079px) {
+    #topbar .bx--header__menu-toggle {
+        display: block;
+    }
+
+    #topbar .bx--header__name {
+        width: calc(300px - 49px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    #topbar .bx--header__name {
+        width: calc(210px - 48px);
+    }
+
+    #topbar .GlobalSearch-module--container.mobile-version {
+        display: flex;
+        width: 3rem;
+    }
+
+    #searchform {
+        display: none;
+    }
+
+    #searchform.show {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    #searchform.show .GlobalSearch-module--container {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #change-version .desktop-version-label {
+        display: none;
+    }
+
+    #change-version .mobile-version-label {
+        display: inline;
+    }
+}
+
+@media (max-width: 420px) {
+    #topbar .bx--header__name {
+        padding: 0;
+    }
+
+    #topbar .bx--header__name #neteye-logo {
+        display: none;
+    }
+
+    #topbar .bx--header__name #mobile-neteye-logo {
+        display: block;
+    }
+}

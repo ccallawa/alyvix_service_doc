@@ -1,0 +1,58 @@
+{% block menu %}
+<div class="global-toc-wrapper position-fixed">
+    {% set toctree = toctree(maxdepth=3, collapse=False, includehidden=False, titles_only=False) %}
+    {% if toctree %}
+        <div class="sidebartoctree">
+            {{ toctree }}
+        </div>
+    {% else %}
+        <!-- Local TOC -->
+        <div class="local-toc">{{ toc }}</div>
+    {% endif %}
+</div>
+
+    <script>
+        (function() {
+            $("#menu .sidebartoctree > ul .toctree-l2 ul li a").each((index, el) => {
+                const href = el.getAttribute("href");
+                if (href && !href.includes("#")) {
+                    el.parentElement.parentElement.parentElement.classList.add("has-3rd-level");
+                }
+            });
+
+            /* Open current menu */
+            var currentMenu = $(".current.reference.internal");
+            if (currentMenu.length) {
+                currentMenu.toggleClass("open");
+                var subMenu = currentMenu.parent().find("ul");
+                if (subMenu.length) {
+                    subMenu.toggleClass("open");
+                }
+
+                /* The menu icon is set according to the href of the menu item.
+                 * Sphinx sets the href to "#" for the current element.
+                 * This sets the href of the currently selected menu item
+                 * to display the correct icon */
+                currentMenu.attr("href", window.location.pathname);
+            }
+
+            const currentL2 = $(".toctree-l2.current.has-3rd-level");
+            if (currentL2.length) {
+                currentL2.find("a").toggleClass("open");
+            }
+
+            /* Toggle collapse */
+            /* Don't navigate to the URL, just open the menu with its animation */
+            /* If a previous menu item was open, it will stay open */
+            $("#menu .sidebartoctree > ul .toctree-l1 > a, #menu .sidebartoctree > ul .toctree-l2.has-3rd-level > a:not(.open)").click(function(e) {
+                var submenu = $(e.target).next("ul");
+                if (submenu.length) {
+                    //e.preventDefault();   /* Don't navigate to the URL */
+                    //e.stopPropagation();  /* Don't tell parent handlers about this click. */
+                    submenu.toggleClass("open");
+                    $(e.target).toggleClass("open");
+                }
+            });
+        })()
+    </script>
+{% endblock %}

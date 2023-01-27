@@ -1,0 +1,28 @@
+{#
+basic/searchbox.html
+~~~~~~~~~~~~~~~~~~~~
+
+Sphinx sidebar template: quick search box.
+
+:copyright: Copyright 2007-2020 by the Sphinx team, see AUTHORS.
+:license: BSD, see LICENSE for details.
+#}
+{%- if builder != "singlehtml" %}
+<div class="GlobalSearch-module--container mobile-version" role="search">
+    <div class="GlobalSearch-module--inputWrapper" aria-owns="search-menu" aria-haspopup="menu">
+        <button class="GlobalSearch-module--searchButton show-search-input" onClick="$('#searchform').toggleClass('show')">
+            <img src="{{ pathto('_static/icons/search.svg', 1)|e }}">
+        </button>
+    </div>
+</div>
+<form action="{{ pathto('search') }}" method="get" id="searchform">
+    <div class="GlobalSearch-module--container desktop-version" role="search">
+        <div class="GlobalSearch-module--inputWrapper" aria-owns="search-menu" aria-haspopup="menu">
+            <input type="search" id="searchbar" placeholder="Search" name="q">
+            <button tabindex="0" class="GlobalSearch-module--searchButton" type="submit" aria-label="Search">
+                <img src="{{ pathto('_static/icons/search.svg', 1)|e }}">
+            </button>
+        </div>
+    </div>
+</form>
+{%- endif %}

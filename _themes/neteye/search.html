@@ -1,0 +1,97 @@
+{%- extends "layout.html" %}
+{% set css_files = css_files + ['_static/search.css'] %}
+{% set title = _('Search:') %}
+
+{%- block scripts %}
+{{ super() }}
+<script src="{{ pathto('_static/searchtools.js', 1) }}"></script>
+<script src="{{ pathto('_static/language_data.js', 1) }}"></script>
+{%- endblock %}
+{% block extrahead %}
+<script src="{{ pathto('searchindex.js', 1) }}" defer></script>
+{{ super() }}
+{% endblock %}
+
+{%- block sidebar1 %}
+<div id="menu" class="col-xl-auto">
+    {{ sidebar() }}
+</div>
+
+<div id="content" class="col">
+    <div class="row" id="search-banner">
+        <div class="banner-gradient">
+            <div class="col hide-in-small-screen"></div>
+            <div class="col main-content">
+                <div class="row">
+                    <div class="col left-column">
+                        {% if search_results %}
+                        <div class="slogan-container mobile">
+                            {{ search_results }}
+                        </div>
+                        {% endif %}
+                        <h1 class="banner-title">
+                            {{ title|striptags|e }}
+                            <span class="query"></span>
+                        </h1>
+                        <script>
+                            $('#search-banner .banner-title .query').append(getUrlVars()["q"]);
+                            $(document).ready(function(){
+                                $('#search-banner .banner-title').prepend($('.search-summary'))
+                            });
+
+                            function getUrlVars() {
+                                var vars = {};
+                                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                                    vars[key] = decodeURIComponent(value.replace(/\+/g, ' '));
+                                    const lastChar = vars[key].slice(-1);
+                                    if (lastChar === '#') {
+                                        vars[key] = vars[key].slice(0,-1);
+                                    }
+                                });
+                                return vars;
+                            }
+                        </script>
+                    </div>
+                    <div class="col right-column">
+                    </div>
+                </div>
+            </div>
+            <div class="col hide-in-small-screen"></div>
+        </div>
+    </div>
+
+    <div class="row search-page" id="document">
+        <div class="col hide-in-small-screen"></div>
+        <div class="col main-content">
+            <div class="row">
+                <div class="col">
+
+                    <div id="fallback" class="admonition warning">
+                        <script>$('#fallback').hide();</script>
+                        <p>
+                            {% trans %}Please activate JavaScript to enable the search
+                            functionality.{% endtrans %}
+                        </p>
+                    </div>
+
+                    {% if search_performed %}
+                    {% if not search_results %}
+                    <p>{{ _('Your search did not match any documents. Please make sure that all words are spelled correctly and that you\'ve selected enough categories.') }}</p>
+                    {% endif %}
+                    {% endif %}
+
+                    <div id="search-results">
+                        {% if search_results %}
+                        <ul>
+                            {% for href, caption, context in search_results %}
+                            <li><a href="{{ pathto(item.href) }}">{{ caption }}</a>
+                                <div class="context">{{ context|e }}</div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+
+{% endblock %}
+
+{% block body %}{% endblock %}

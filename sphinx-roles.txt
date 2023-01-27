@@ -1,0 +1,240 @@
+.. |font-img| image:: /_static/img/font.png
+   :width: 60
+.. |image-img| image:: /_static/img/image.png
+   :width: 60
+.. |rect-img| image:: /_static/img/rect.png
+   :width: 60
+.. |stop-icon| image:: /_static/icons/custom/stop-solid.png
+   :width: 24
+   :class: no-scaled-link
+.. |hand-icon| image:: /_static/icons/custom/hand-solid.png
+   :width: 24
+   :class: no-scaled-link
+.. |email-small-img| image:: /_static/img/email_40.png
+   :width: 40
+   :class: no-scaled-link
+.. |slack-small-img| image:: /pictures/slack_logo.png
+   :width: 38
+   :class: no-scaled-link
+
+.. |play-icon| image:: /_static/icons/custom/play-solid.png
+   :width: 24
+   :class: no-scaled-link
+
+.. |times-icon| image:: /_static/icons/custom/times-solid.png
+   :width: 24
+   :class: no-scaled-link
+
+.. |python-download-link| replace:: :download:`64-bit Windows installer for Python version 3.7.9 <https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe>`
+
+.. |python-remove-name| replace:: :file:`Python 3.7.9 (64-bit)`
+
+.. |link-postgresql-install-12.x| replace:: :iconlink:`ext|12.x|https://content-www.enterprisedb.com/postgresql-tutorial-resources-training?cid=48`
+
+.. |link-to-alyvix-install332| replace:: :iconlink:`ext|Alyvix 3.3.2|https://alyvix.com/learn/getting_started/install.html#versions`
+
+.. |link-to-alyvix-install331| replace:: :iconlink:`ext|Alyvix 3.3.1|https://alyvix.com/learn/getting_started/install.html#versions`
+
+.. |link-to-alyvix-install323| replace:: :iconlink:`ext|Alyvix 3.2.3|https://alyvix.com/learn/getting_started/install.html#versions`
+
+.. |link-to-alyvix-install320| replace:: :iconlink:`ext|Alyvix 3.2.0|https://alyvix.com/learn/getting_started/install.html#versions`
+
+.. |source-youtube| raw:: html
+
+   <div style="text-align: right; padding: 0; margin: 0;">Source:  Alyvix@YouTube &nbsp; <i class="fas fa-small fa-external-link-alt"></i></div>
+
+.. |source-youtube-left| raw:: html
+
+   <div style="text-align: left; padding: 0; margin: 0;">Source:  Alyvix@YouTube &nbsp; <i class="fas fa-small fa-external-link-alt"></i></div>
+
+.. |bar-icon| raw:: html
+
+   &nbsp;<i class="fa fa-small fa-black fa-bars"></i>
+
+.. |plus-icon| raw:: html
+
+   <i class="fa fa-small fa-invblue fa-plus"></i>
+
+.. |ban-icon| raw:: html
+
+   &nbsp;<i class="fa fa-small fa-black fa-ban"></i>
+
+.. |sort-up-icon| raw:: html
+
+   <i class="fa fa-med fa-invblue2 fa-caret-up" style="vertical-align: bottom;"></i>
+
+.. |sort-down-icon| raw:: html
+
+   <i class="fa fa-med fa-invblue2 fa-caret-down" style="vertical-align: top;"></i>
+
+.. |right-icon-white| raw:: html
+
+   <i class="fa fa-med fa-white fa-caret-right" style="vertical-align: top;"></i>
+
+.. |example-icon| raw:: html
+
+   <i class="bi-check2-square"></i>
+
+.. |4arrows-icon| raw:: html
+
+   <i class="fa fa-smaller fa-arrows"></i>
+
+.. |link-icon| raw:: html
+
+   <i class="fa fa-smaller fa-link"></i>
+
+.. |gear-icon| raw:: html
+
+   <i class="fas fa-small fa-invblue fa-cog"></i>
+
+.. |save-icon| raw:: html
+
+   <i class="fa fa-small fa-invblue fa-save"></i>
+
+.. |trash-icon| raw:: html
+
+   <i class="fa fa-small fa-invblue fa-trash"></i>
+
+.. |pivotal| image:: /pictures/pt_logo.png
+   :height: 38px
+   :width: 38px
+   :alt: The logo for Pivotal Tracker.
+   :target: https://www.pivotaltracker.com/n/projects/1533621
+
+.. |smalltab| raw:: html
+
+   &nbsp;
+
+.. |halftab| raw:: html
+
+   &nbsp; &nbsp;
+
+.. |tab| raw:: html
+
+   &nbsp; &nbsp; &nbsp;
+
+.. |br| raw:: html
+
+   <br><br>
+
+.. |br1| raw:: html
+
+   <br>
+
+.. |p| raw:: html
+
+   <p />
+
+.. |accordion-entry| raw:: html
+
+   <button class="accordion">
+
+.. |accordion-middle| raw:: html
+
+   </button><div class="accordion">
+
+.. |accordion-end| raw:: html
+
+   </div>
+
+.. |copyright|   unicode:: U+000A9
+
+.. |registration|  unicode:: U+000AE
+
+.. |trademark|  unicode:: U+2122
+
+.. |copy| raw:: html
+
+   <sup>&#169;</sup>
+
+.. |reg| raw:: html
+
+   <sup>&#174;</sup>
+
+.. |trade| raw:: html
+
+   <sup>&#8482;</sup>
+
+.. |ndash|  unicode:: U+02013 .. en dash
+.. |mdash|  unicode:: U+02014 .. em dash
+
+.. role:: rawhtml(raw)
+   :format: html
+
+.. role:: glossdef
+   :class: glossdef
+
+.. role:: warn
+   :class: redbold
+
+.. role:: ep-head
+   :class: ep-head
+
+.. role:: ep-red
+   :class: endpoint-red
+
+.. role:: ep-black
+   :class: endpoint-black
+
+.. role:: ep-black-s
+   :class: endpoint-black-small pre
+
+.. role:: ep-red-med
+   :class: endpoint-red-med
+
+.. role:: ep-black-med
+   :class: endpoint-black-med
+
+.. role:: lfs
+   :class: large-font-size
+
+.. role:: hint
+   :class: lightgrey
+
+.. role:: shadow
+   :class: medgrey
+
+.. role:: caps
+   :class: smallcaps
+
+.. role:: greyblock
+   :class: greyblock
+
+.. role:: wbutton
+   :class: whitebutton
+
+.. role:: bbutton
+   :class: bluebutton
+
+.. role:: rbutton
+   :class: redbutton
+
+.. role:: gbutton
+   :class: greybutton
+
+.. role:: nobutton
+   :class: nobutton
+
+.. role:: runblock
+   :class: greenblock
+
+.. role:: forblock
+   :class: orangeblock
+
+.. role:: bolditalic
+   :class: bolditalic
+
+.. role:: tablecell-name
+   :class: tablecell-name
+
+.. role:: tablecell-type
+   :class: tablecell-type
+
+.. |run| replace:: :greyblock:`RUN`
+.. |if-true| replace:: :greyblock:`IF TRUE`
+.. |if-false| replace:: :greyblock:`IF FALSE`
+.. |for| replace:: :greyblock:`FOR`
+
+.. |tmo| replace:: :greyblock:`TIMEOUT`
+.. |brk| replace:: :greyblock:`BREAK`
+.. |mea| replace:: :greyblock:`MEASURE`
