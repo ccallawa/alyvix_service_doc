@@ -123,12 +123,12 @@ The following steps will install Alyvix Service on your machine:
 
    Note that the private key is all you need, you should not be asked for an additional password.
 
-#. Copy the Java Web Token (JWT) from your monitoring system
+#. Copy the JSON Web Token (JWT), which Alyvix currently implements for authentication purposes,
+   from your monitoring system.
 
    * Create the folder :file:`C:\\ProgramData\\Alyvix\\certs\\jwt\\`
-   * Then for example in NetEye, copy the file |p|
-     :file:`/neteye/shared/icingaweb2/conf/modules/neteye/jwt-keys/multipurpose-jwt.pub`
-     |p| to that new folder and rename it as :file:`public.pem`
+   * Copy the JWT certificate file from your monitoring system into the folder above,
+     renaming it to :file:`public.pem`.
 
 #. Run **Alyvix Service** within Windows Services at **Windows Services > Alyvix Service > start**
 
@@ -149,7 +149,7 @@ The following steps will upgrade Alyvix Service to the latest version on your ma
 
    * Back up your Alyvix Service configuration file:  :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\config.json`
    * Back up your Alyvix Service HTTPS certificate:  :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\cert\\`
-   * Back up your Alyvix Service Java Web Token (JWT) certificate:  :file:`C:\\ProgramData\\Alyvix\\certs\\jwt\\`
+   * Back up your Alyvix Service JSON Web Token (JWT) certificate:  :file:`C:\\ProgramData\\Alyvix\\certs\\jwt\\`
    * Stop Alyvix Service:  **Windows Services > Alyvix Service > Stop**
    * Close all Alyvix client windows (where appropriate)
    * Uninstall Alyvix Service:  **Windows Control Panel > Programs and Features > Alyvix Service > Uninstall**
@@ -169,7 +169,7 @@ The following steps will upgrade Alyvix Service to the latest version on your ma
      ``"database":{.. "password": "<your_password>", ..}``
    * Install your HTTPS certificate (or restore the backup files):  Save the :file:`cert.crt` and
      :file:`cert.key` files in :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\cert\\`
-   * Install your Java Web Token (JWT) certificate (or resture the backup file):  Save the
+   * Install your JSON Web Token (JWT) certificate (or resture the backup file):  Save the
      :file:`public.pem` file in :file:`C:\\ProgramData\\Alyvix\\certs\\jwt\\`
 
 
