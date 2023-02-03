@@ -26,14 +26,6 @@ a GET, PUT, POST or DELETE call such as ``GET /license`` will result in a final 
 
 All return values will be in JSON format.  The included examples are written in Python.
 
-.. warning::
-
-   All API level 0 endpoints (marked "/v0/" through Alyvix Service v2.0.0) are insecure.
-   They should only be used when both caller and server are contained entirely within the
-   same private network.
-
-|
-
 
 .. _alyvix_service_restful_api_license:
 
