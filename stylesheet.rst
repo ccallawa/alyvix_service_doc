@@ -994,6 +994,7 @@ documentation are:
 * ``sphinx``
 * ``sphinx_rtd_theme``
 * ``sphinx-copybutton``
+* ``sphinx_panels``
 
 We typically build the user guide with the following command.  You will need to change the
 executable and source/build directory names according to your environment.
@@ -1053,7 +1054,7 @@ Each instance consists of three arguments separated by vertical bars " | ":
 
 The extension itself is stored in the repository as the single file
 :file:`alyvix_doc\\_ext\\iconlink.py`.  The icon used can be changed in this python file, while
-the appearance can be changed in :file:`allyvix_doc\\_static\\css\\custom.css`.
+the appearance can be changed in :file:`alyvix_doc\\_static\\css\\custom.css`.
 
 While this extension is included by default, it does require one change in the DocUtils file
 :file:`Python\\Lib\\site-packages\\docutils\\writers\\_html_base.py` to ensure the icon CSS

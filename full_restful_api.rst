@@ -452,6 +452,7 @@ and data measures.
    +----+----------------------------------------------------------------------------------------------------------+
    | :lfs:`Optional Arguments:`                                                                                    |
    +----+----------------------------------------------------------------------------------------------------------+
+   |    | :ep-red:`session_id` :ep-red:`(int)` default *all* |p|                                                   |
    |    | :ep-red:`test_case_from` :ep-red:`(string)` default *last runcode* |p|                                   |
    |    | :ep-red:`test_case_to` :ep-red:`(string)` default *last runcode* |p|                                     |
    |    | :ep-red:`test_case_screenshot` :ep-red:`(bool)` default *false*                                          |

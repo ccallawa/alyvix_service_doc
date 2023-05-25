@@ -25,6 +25,8 @@
    :width: 24
    :class: no-scaled-link
 
+.. |config-file-location| replace:: :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\config.json`
+
 .. |python-download-link| replace:: :download:`64-bit Windows installer for Python version 3.7.9 <https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe>`
 
 .. |python-remove-name| replace:: :file:`Python 3.7.9 (64-bit)`

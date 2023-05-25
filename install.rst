@@ -108,8 +108,7 @@ The following steps will install Alyvix Service on your machine:
    * Run the :file:`setup.exe` installer
    * Set the database password as follows:
 
-      * Open the file :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\config.json` in
-        administrator mode
+      * Open the file |config-file-location| in administrator mode
       * Set your own password in this line: |br1|
         ``"database":{.. "password": "<your_password>", ..}``
 
@@ -147,7 +146,7 @@ The following steps will upgrade Alyvix Service to the latest version on your ma
 
 #. Uninstall Alyvix Service
 
-   * Back up your Alyvix Service configuration file:  :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\config.json`
+   * Back up your Alyvix Service configuration file:  |config-file-location|
    * Back up your Alyvix Service HTTPS certificate:  :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\cert\\`
    * Back up your Alyvix Service JSON Web Token (JWT) certificate:  :file:`C:\\ProgramData\\Alyvix\\certs\\jwt\\`
    * Stop Alyvix Service:  **Windows Services > Alyvix Service > Stop**
@@ -163,8 +162,7 @@ The following steps will upgrade Alyvix Service to the latest version on your ma
 #. Install the new Alyvix Service
 
    * Run the Alyvix Service Installer (:file:`setup.exe`) found in the Alyvix Service package
-   * Set the database password by editing the file
-     :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\config.json` in administrator mode
+   * Set the database password by editing the file |config-file-location| in administrator mode
      (or by restoring the backup file): |br1|
      ``"database":{.. "password": "<your_password>", ..}``
    * Install your HTTPS certificate (or restore the backup files):  Save the :file:`cert.crt` and
