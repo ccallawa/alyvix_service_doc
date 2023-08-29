@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 29-09-2022
+:modified: 19-07-2023
 :tags: index
 :lang: en-US
 :translation: false
@@ -16,12 +16,13 @@
 Alyvix Service Overview
 #######################
 
-Welcome to the user guide for **Alyvix Service 2.0.0**.
+Welcome to the user guide for **Alyvix Service 2.1.0**.
 
-`Alyvix <https://alyvix.com/>`_ lets you build end-user bots that visually interact with any
-Windows application like ERPs, or any web app in your favorite browser.
+Alyvix Service builds on the `open source Alyvix project <https://alyvix.com/>`_ (**Alyvix Core**).
+which lets you build end-user bots that visually interact with any Windows application like ERPs,
+or any web app in your favorite browser.
 
-**Alyvix Service** lets you scale up visual monitoring by managing all of your test cases at
+**Alyvix Service** lets you scale up visual monitoring by managing all of your Alyvix test cases at
 a single point in your own monitoring system.  You can schedule end-user bots continuously and
 in parallel, while keeping your Windows RDP sessions up and running.  It helps you report
 end-user experiences by retrieving the test case measurements and screenshots, and retaining
@@ -30,17 +31,17 @@ summary reports that can be viewed at any time.
 Alyvix Service, running as a GUI-less Windows Service, provides the following features:
 
 * **Session Management:**   Keeps multiple Windows Service sessions alive
-* **Test Case Scheduling:**  Runs test cases continuously and in parallel
+* **Test Case Scheduling:**  Runs Alyvix test cases continuously, regularly, and in parallel
 * **Measurement Web APIs:**  Provides recorded measurements and screenshots on demand
 * **Transaction Reporting:**  Helps you find and view the certified results for each test case run
 
 Alyvix Service runs on Windows, opening multiple, independent sessions on a private network.  On
-each session it schedules monitoring test cases, collects their measurements, and logs the sets of
+each session it schedules the monitoring of test cases, collects their measurements, and logs the sets of
 Alyvix test cases you select.  Everything from configuration to reporting is managed by a set of
 RESTful endpoints, so you can access any part of Alyvix Service in your browser, from anywhere in
 the world.
 
-In addition to the terminology used with Alyvix Editor and Robot, Alyvix Service adds the
+In addition to the terminology used with Alyvix Core's Editor and Robot, Alyvix Service adds the
 following concepts:
 
 * **Session:**  A two-way connection between Alyvix Service and a target Windows session

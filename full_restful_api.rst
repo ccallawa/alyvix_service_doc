@@ -24,7 +24,7 @@ API calls are based on a root URL of the form ``https://<alyvix_service_ip>:<por
 a GET, PUT, POST or DELETE call such as ``GET /license`` will result in a final URL of the form
 ``https://<alyvix_service_ip>:<port>/license``.
 
-All return values will be in JSON format.  The included examples are written in Python.
+All return values will be in JSON format.  The included example invocations are written in Python.
 
 
 .. _alyvix_service_restful_api_license:

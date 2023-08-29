@@ -17,183 +17,126 @@ NetEye 4 Integration
 ####################
 
 Alyvix Service fully integrates with
-`NetEye  4 <https://neteye.guide/current/introduction/general.html>`_ via the
+`NetEye  4 <https://neteye.guide/current/introduction/product-overview.html>`_ via the
 :ref:`Alyvix Service API <alyvix_service_restful_api_top>`,
-allowing you to incorporate your Alyvix nodes into your monitoring network just
+allowing you to incorporate your Alyvix Nodes into your monitoring network just
 as if they were any other server, and see the results of your Alyvix runs
 in the standard NetEye 4 dashboards.
 
-This guide will help you configure NetEye 4 so that you can query and
-control your Alyvix nodes, check that NetEye and Alyvix are working together properly,
-and show you how to use Alyvix to full advantage.
+This quick guide will help you understand the steps needed to configure NetEye 4
+and links to the relevant sections of the NetEye 4 documentation to help you get
+the most out of Alyvix Service and Alyvix Core.
 
 It assumes that you've already correctly
-:ref:`installed and configured Alyvix Service <install_top>`
-as well as `NetEye <https://neteye.guide/current/getting-started/requirements.html>`_.
-As part of that procedure, you will have already copied security certificates
-(HTTPS/TLS and JWT) from your NetEye 4 installation to Alyvix Service and restarted
-its service on Windows.
+:ref:`installed and configured Alyvix Service <install_top>` as well as
+`satisfied the NetEye requirements <https://neteye.guide/current/getting-started/requirements.html>`_.
+As part of that process, you will have already obtained security certificates
+(`HTTPS/TLS <https://neteye.guide/current/apm/alyvix/configuration.html#certificates>`_
+and `JWT <https://neteye.guide/current/apm/alyvix/configuration.html#jwt-authentication>`_)
+from your NetEye 4 installation, have restarted Alyvix Service on Windows via *Computer Management*, and
+`have understood and chosen the appropriate NetEye architecture <https://neteye.guide/current/apm/alyvix/concepts.html>`_.
 
-So now we're ready to complete the integration/configuration!
-
-
-.. _monitoring_integrations_neteye_integrate:
-
-=====================
-Integration Procedure
-=====================
-
-From this point on all our configuration activities will be carried out within
-NetEye itself, first on the command line, then within Director, and finally in the
-**Alyvix module** that we'll add to NetEye.
-
-As an aside, you can also watch a
+Please note you can also watch a
 `video version of this configuration guide <https://youtu.be/ElP_A9XwwpY>`_.
 
+.. _monitoring_integrations_neteye_configuration_steps:
 
-.. _monitoring_integrations_neteye_configure:
+-------------------
+Configuration Steps
+-------------------
 
--------------------------
-Install the Alyvix Module
--------------------------
+.. rst-class:: bignums
 
-First let's use the command line to install the Alyvix module on NetEye.
+#. **Add tenants if in a multi-tenant environment**
 
-On your NetEye 4 machine, start a shell as root.  Then run the following two
-commands.  It may take several minutes.
+   If you're not familiar with how NetEye tenancy works, please
+   `read the conceptual documentation <https://neteye.guide/current/apm/alyvix/concepts.html#architecture-of-alyvix-nodes>`_
+   for tenancy types specific to the Alyvix module in NetEye.  Once you've decided on the best tenacy
+   type for your situation, you can then find more
+   `technical information here <https://neteye.guide/current/apm/alyvix/configuration.html#step-2-configure-the-alyvix-node>`_. |br|
 
-.. code-block:: bash
-   :caption: Install the Alyvix module
-   :class: medium-code-block
+   When ready you can `create and configure one or more tenants <https://neteye.guide/4.31/getting-started/neteye-command.html#neteye-tenant>`_
+   using this command:
 
-   dnf -y groupinstall neteye-alyvix --enablerepo=neteye
-   neteye_secure_install
+   .. code-block:: bash
 
-Once it completes, you will need to refresh your browser window, then log out of
-NetEye and log back in to ensure the necessary permissions are updated.
-
-
-.. _monitoring_integrations_neteye_director:
-
---------------------------------------
-Configuring an Alyvix Node in Director
---------------------------------------
-
-Each computer that runs Alyvix Service along with one or more Alyvix test cases is called
-an *Alyvix Node*.  From our point of view, a node is simply a dedicated machine running
-Alyvix Service and one or more test cases.  From the point of view of NetEye 4, each
-Alyvix Node is a *Host* that must be registered as in Director just like any other server.
-
-.. image:: images/NE4-Alyvix-architecture.png
-   :width: 80%
-   :align: center
-   :alt: The architecture of Alyvix under NetEye 4.
-
-Thus within NetEye you will need to configure at least the node's host name, type, and
-IP address.  Luckily, the registration procedure needs only one very slight modification
-`beyond the standard procedure <https://neteye.guide/current/monitoring/configuration-monitored-objects.html#adding-a-host>`_.
-
-Once the Alyvix Module has been installed in the preceding step, an additional section of
-properties will be added called "Alyvix settings", containing the field "Alyvix node".
-Simply changing the value of this field from "No" to "Yes" is all that's needed to make
-the host appear as an Alyvix Node within the Alyvix module.
-
-`Make that change <https://neteye.guide/current/apm/alyvix-configuration.html>`_, then deploy
-the modified Director configuration and proceed to the
-step below.
+      neteye tenant config create <tenant_name> [options]
 
 
-.. _monitoring_integrations_neteye_alyvix_module:
+#. **Install the Alyvix Module in Director**
 
------------------------------------------------
-Configuring an Alyvix Node in the Alyvix Module
------------------------------------------------
+   Follow the installation procedure for
+   `NetEye Additional Components <https://neteye.guide/current/getting-started/components-installation.html>`_
+   in the NetEye user guide for the Feature Module **Alyvix** (*neteye-alyvix*).  Once it completes, you'll
+   need to refresh your browser window, then log out of NetEye and log back in to ensure the necessary
+   permissions are updated.
 
-Once the deployment is complete, click on the Alyvix module in the left side menu.
-It will take you to the screen with the list of Alyvix Nodes.
-The final configuration steps, summarized below, are
-`described in the NetEye 4 guide <https://neteye.guide/current/apm/alyvix-configuration.html#put-test-case-in-production>`_.
+#. **Configuring an Alyvix Node in Director**
 
-* **Install an Alyvix license on each node**
+   .. _monitoring_integrations_neteye_director:
 
-  To get the license request, go to a node's License tab nd click on the ``Download Request Key``
-  button.  This will save a request file to your Downloads folder which you then send to
-  info@alyvix.com as an email attachment.  When the activation key is sent back, use the
-  ``Upload Activation Key`` button on the License tab to select the key file. |br|
+   Each computer that runs Alyvix Service along with one or more Alyvix test cases is called an *Alyvix Node*.
+   From our point of view, a Node is simply a dedicated machine running Alyvix Service and one or more Alyvix
+   test cases. |br|
 
-  .. image:: images/install_license.png
-     :width: 50%
-     :align: center
-     :alt: Screenshot of installing an Alyvix license.
+   From the point of view of NetEye 4, each Alyvix Node is a *Host* that must be registered in Director
+   just like any other server.  Thus within NetEye you will
+   `need to configure (and deploy) <https://neteye.guide/current/apm/alyvix/configuration.html#create-an-alyvix-node>`_
+   at least the Node's (case sensitive) host name, type, IP address, and *tenancy type*, which is used
+   to ensure NetEye users are only allowed to see data they are authorized to see. |br|
 
-  |
+   Based on your chosen tenancy type, you must now copy the appropriate
+   `role mapping <https://neteye.guide/current/apm/alyvix/configuration.html#role-mappings>`_ from the
+   NetEye User Guide and save it on each Alyvix Node as the file
+   :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\mapping.json`
+   (with the required modifications in the case of the *Tenant-Specific* architecture).
 
-* **Add a session to the Alyvix node**
+   .. _monitoring_integrations_neteye_alyvix_node_configure:
 
-  You can add a session to a node by clicking on the node's row. You can then modify an
-  existing session, or create a new one with the ``New Session`` button.  Insert the credentials,
-  modify any parameters as needed, and hit the ``Save`` button.  The new session will then
-  be displayed and its status updated. |br|
+#. **Configuring an Alyvix Node in the Alyvix Module**
 
-  .. image:: images/add_session.png
-     :width: 70%
-     :align: center
-     :alt: Screenshot of the add session panel.
+   Once you've deployed those changes, follow the NetEye user guide instructions to
+   `activate the new Node <https://neteye.guide/current/apm/alyvix/configuration.html#manage-node-details>`_.
+   This consists of:
 
-  |
+   * Installing your Alyvix license on each Node
+   * Adding one or more sessions to each Alyvix Node
 
-* **Add a test case to the session**
+     * If you selected the *tenant_shared* architecture, select the tenant to whom this
+       particular session belongs
+     * If directed to do so by the Add Session panel, open a shell on the **NetEye Master** node
+       and run the `neteye` command as described in the message below the
+       tenancy field, as in this example: |br|
 
-  Make sure you've created a directory on each node to hold all the test cases.  You'll need
-  a copy of all the test cases you want to run on each Alyvix node they should run on.
+       .. pull-quote::
 
-  To assign an Alyvix test case to our session, click on ``Test Cases`` on the left sidebar menu,
-  then on the ``Create`` button to the right.  Give a name for your test case in this session,
-  select a test case from the list of test case files in your directory, and confirm with
-  the ``Create`` button. |br|
+          In order to complete the setup of the connection with the Alyvix node, please execute the ``neteye alyvix-node setup <node-name>`` setup command. For more information please consult our `User Guide <https://neteye.guide/current/apm/alyvix/configuration.html#visualize-alyvix-performance-metrics>`_.
 
-  .. image:: images/add_test_case.png
-     :width: 50%
-     :align: center
-     :alt: Screenshot of the add test case panel.
+   * Adding one or more test cases to each session
+   * Enabling the test cases and sessions to run at regular intervals
 
-  |
+#. **Check that single test case data is available**
 
-* **Enable the test case and session to run at regular intervals**
+   Once your Alyvix sessions are up and running, you'll want to check that they're working correctly.
+   Because it takes time to schedule and run Alyvix test cases, results in the form of success/failure
+   and timing results may only be available after a few minutes. |br|
 
-  You can now schedule the test case to run in the workflow at the interval we set.  Whenever
-  you add a new session, you'll need to enable both the session workflow itself and the test case.
-  It will now run without any further action on our part.  Once added, you can disable and
-  re-enable sessions and individual test cases as desired. |br|
+   Once each test case completes, Alyvix also
+   `creates a report <https://neteye.guide/current/apm/alyvix/configuration.html#reports-tab>`_
+   which you can see inside NetEye.  Each report contains both timing data and output screenshots
+   (both expected and actual in the case of a failed test case run). |br|
 
-  .. image:: images/enable_test_case.png
-     :width: 80%
-     :align: center
-     :alt: Screenshot of enabling a test case or session.
+   After a few minutes, go to the Reports tab and select a test case run from the list.  If the screenshots are visible
+   and look as you expected, and the timing data is present, then you have correctly completed the Alyvix/NetEye
+   integration and configuration. |br|
 
-  |
+   .. image:: images/view_report.png
+      :width: 75%
+      :align: center
+      :alt: Screenshot of a list of reports and one example.
 
+#. **View historical data in the ITOA module**
 
-.. _monitoring_integrations_neteye_check:
-
--------------
-A Final Check
--------------
-
-Once your Alyvix sessions are up and running, you'll want to check that they're working
-correctly.  Because it takes time to schedule and run Alyvix test cases, results aren't available
-instantaneously.
-
-Once each test case completes, Alyvix
-`creates a report <https://neteye.guide/current/apm/alyvix-configuration.html#step-5-check-test-case-results>`_
-which you can see inside NetEye.  Each report contains both timing data and output screenshots
-(both expected and actual in the case of a failed test case run).
-
-Go to the Reports tab and select a test case run from the list.  If the screenshots are
-visible and the timing data is present, then you have correctly completed the Alyvix/NetEye
-integration and configuration.
-
-  .. image:: images/view_report.png
-     :width: 100%
-     :align: center
-     :alt: Screenshot of a list of reports and one example.
+   You can now view the first recorded data points in NetEye's ITOA module as described in the
+   `NetEye documentation <https://neteye.guide/current/apm/alyvix/configuration.html#visualize-alyvix-performance-metrics>`_.
+   Note that a tenant is called an `Organization` in the ITOA module.

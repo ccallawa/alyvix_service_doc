@@ -27,7 +27,7 @@ to see what we've been up to recently, or reach us directly with either of the f
 
 |email-small-img| |tab|  info@alyvix.com
 
-Would you like to **get in touch with the Alyvix team**?
+Would you like to **get in touch with the Alyvix Service team**?
 Write us an **email if you'd like custom support**, further clarifications, etc.
 Please, don't be shy: just ask if you need any help.  **We love questions and feedback**.
 

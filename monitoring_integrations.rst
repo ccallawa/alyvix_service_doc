@@ -22,7 +22,7 @@ Alyvix test cases into your monitoring system.  Over time the data collected can
 trends that can help you discover when the user experience is below expectations and
 locate hardware bottlenecks.
 
-The monitoring systems below have been tested for compatibility with Alyvix.  To see the
+The monitoring systems below have been tested for compatibility with Alyvix Service.  To see the
 configuration tutorial for a particular system, click on the monitoring system link in the
 first column, or in the index at the left.  Integration tutorials for additional monitoring
 systems will be added as they become available.
