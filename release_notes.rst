@@ -37,6 +37,7 @@ Alyvix Service releases:
    :maxdepth: 2
    :name: toc_test
 
+   release_notes/release_notes_21.rst
    release_notes/release_notes_20.rst
 
 |

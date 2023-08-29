@@ -4,25 +4,11 @@
    :width: 60
 .. |rect-img| image:: /_static/img/rect.png
    :width: 60
-.. |stop-icon| image:: /_static/icons/custom/stop-solid.png
-   :width: 24
-   :class: no-scaled-link
-.. |hand-icon| image:: /_static/icons/custom/hand-solid.png
-   :width: 24
-   :class: no-scaled-link
 .. |email-small-img| image:: /_static/img/email_40.png
    :width: 40
    :class: no-scaled-link
 .. |slack-small-img| image:: /pictures/slack_logo.png
    :width: 38
-   :class: no-scaled-link
-
-.. |play-icon| image:: /_static/icons/custom/play-solid.png
-   :width: 24
-   :class: no-scaled-link
-
-.. |times-icon| image:: /_static/icons/custom/times-solid.png
-   :width: 24
    :class: no-scaled-link
 
 .. |config-file-location| replace:: :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\config.json`
@@ -32,6 +18,8 @@
 .. |python-remove-name| replace:: :file:`Python 3.7.9 (64-bit)`
 
 .. |link-postgresql-install-12.x| replace:: :iconlink:`ext|12.x|https://content-www.enterprisedb.com/postgresql-tutorial-resources-training?cid=48`
+
+.. |link-to-alyvix-install340| replace:: :iconlink:`ext|Alyvix 3.4.0|https://alyvix.com/learn/getting_started/install.html#versions`
 
 .. |link-to-alyvix-install332| replace:: :iconlink:`ext|Alyvix 3.3.2|https://alyvix.com/learn/getting_started/install.html#versions`
 

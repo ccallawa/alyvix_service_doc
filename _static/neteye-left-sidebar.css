@@ -165,6 +165,11 @@
     background-image: url('./icons/modules/shape-intersect.svg');
 }
 
+#menu .sidebartoctree > ul > li > a[href$="nats_integration.html"]::before,
+#menu .sidebartoctree > ul > li:hover > a[href$="nats_integration.html"]::before {
+    background-image: url('./icons/modules/time-plot.svg');
+}
+
 #menu .sidebartoctree > ul > li > a[href$="release_notes.html"]::before,
 #menu .sidebartoctree > ul > li:hover > a[href$="release_notes.html"]::before {
     background-image: url('./icons/modules/report.svg');
@@ -229,6 +234,10 @@
 
 #menu .sidebartoctree ul > li > a[href$="monitoring_integrations.html"]:hover::before {
     background-image: url('./icons/modules/shape-intersect-black.svg');
+}
+
+#menu .sidebartoctree ul > li > a[href$="nats_integration.html"]:hover::before {
+    background-image: url('./icons/modules/time-plot-black.svg');
 }
 
 #menu .sidebartoctree ul > li > a[href$="release_notes.html"]:hover::before {

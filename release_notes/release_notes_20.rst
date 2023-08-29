@@ -1,5 +1,5 @@
 :author: Charles Callaway
-:date: 22-09-2020
+:date: 14-11-2022
 :modified: 14-11-2022
 :tags: release notes
 :lang: en-US
@@ -58,7 +58,7 @@ to schedule and run test cases, and retrieve data and reports from those runs.
   * Test case alias report list
   * Test case alias specific report
 
-* **RESTful Endpoints:** Alyvix supplies endpoint URLs for interfaces and data retrieval:
+* **RESTful Endpoints:** Alyvix Service supplies endpoint URLs for interfaces and data retrieval:
 
   * **Frontend Control Panels** allow you to configure parameters and initiate actions
   * **Measurement Web APIs (v0)** return either machine-readable (JSON) or human-readable
