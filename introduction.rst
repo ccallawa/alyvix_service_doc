@@ -16,7 +16,7 @@
 Alyvix Service Overview
 #######################
 
-Welcome to the user guide for **Alyvix Service 2.1.0**.
+Welcome to the user guide for **Alyvix Service 2.3.0**.
 
 Alyvix Service builds on the `open source Alyvix project <https://alyvix.com/>`_ (**Alyvix Core**).
 which lets you build end-user bots that visually interact with any Windows application like ERPs,

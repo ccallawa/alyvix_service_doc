@@ -1,10 +1,10 @@
 :author: Charles Callaway
 :date: 05-11-2020
-:modified: 06-06-2023
+:modified: 14-09-2023
 :tags: install, python, pip
 :lang: en-US
 :translation: false
-:status: final
+:status: continuous
 
 .. include:: sphinx-roles.txt
 
@@ -78,6 +78,10 @@ Versions
 
 +-----------------------------------+----------------------------------+---------------------------------+
 | Alyvix Service Version            | Required Alyvix Core Version     | PostgreSQL Version              |
++-----------------------------------+----------------------------------+---------------------------------+
+| Alyvix Service 2.3.0              | |link-to-alyvix-install350|      | |link-postgresql-install-12.x|  |
++-----------------------------------+----------------------------------+---------------------------------+
+| Alyvix Service 2.2.0              | |link-to-alyvix-install350|      | |link-postgresql-install-12.x|  |
 +-----------------------------------+----------------------------------+---------------------------------+
 | Alyvix Service 2.1.0              | |link-to-alyvix-install340|      | |link-postgresql-install-12.x|  |
 +-----------------------------------+----------------------------------+---------------------------------+
