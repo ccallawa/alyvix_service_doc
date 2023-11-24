@@ -1240,7 +1240,7 @@ the linked page above for additional formatting options):
 
       Panel #2
 
-      A link to :link-badge:`https://www.alyvix.com/,"Alyvix",tooltip=A Tooltip` with tooltip
+      A link to :link-badge:`https://alyvix.com/,"Alyvix",tooltip=A Tooltip` with tooltip
 
       ---
       :body: text-center
@@ -1271,8 +1271,8 @@ the linked page above for additional formatting options):
 
          The content below is a *link-button*:
 
-         .. link-button::  https://www.alyvix.com
-            :text: www.alyvix.com
+         .. link-button::  https://alyvix.com
+            :text: alyvix.com
             :classes: bluebutton
 
 .. tabbed:: RST code
@@ -1291,7 +1291,7 @@ the linked page above for additional formatting options):
 
          Panel #2
 
-         A link to :link-badge:`https://www.alyvix.com/,"Alyvix",tooltip=A Tooltip` with tooltip
+         A link to :link-badge:`https://alyvix.com/,"Alyvix",tooltip=A Tooltip` with tooltip
 
          ---
          :body: text-center
@@ -1321,8 +1321,8 @@ the linked page above for additional formatting options):
 
             The content below is a *link-button*:
 
-            .. link-button::  https://www.alyvix.com
-               :text: www.alyvix.com
+            .. link-button::  https://alyvix.com
+               :text: alyvix.com
                :classes: bluebutton
 
 -------------
@@ -1377,7 +1377,7 @@ page a link.)  Some examples:
 
 .. tabbed:: Simple Button with Tooltip
 
-   .. link-button:: https://www.alyvix.com/
+   .. link-button:: https://alyvix.com/
       :classes: btn-success
       :type: url
       :text: Link to Alyvix
@@ -1385,7 +1385,7 @@ page a link.)  Some examples:
 
    .. code-block:: rst
 
-      .. link-button:: https://www.alyvix.com/
+      .. link-button:: https://alyvix.com/
          :classes: btn-success
          :type: url
          :text: Link to Alyvix
@@ -1394,7 +1394,7 @@ page a link.)  Some examples:
 .. tabbed:: Default Tab
    :selected:
 
-   .. link-button:: https://www.alyvix.com/
+   .. link-button:: https://alyvix.com/
       :type: url
       :text: Another link to Alyvix
       :tooltip: I also go to Alyvix
@@ -1402,7 +1402,7 @@ page a link.)  Some examples:
 
    .. code-block:: rst
 
-      .. link-button:: https://www.alyvix.com/
+      .. link-button:: https://alyvix.com/
          :type: url
          :text: Another link to Alyvix
          :tooltip: I also go to Alyvix

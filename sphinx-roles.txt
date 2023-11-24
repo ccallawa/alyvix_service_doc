@@ -17,7 +17,7 @@
 
 .. |python-remove-name| replace:: :file:`Python 3.7.9 (64-bit)`
 
-.. |link-postgresql-install-12.x| replace:: :iconlink:`ext|12.x|https://content-www.enterprisedb.com/postgresql-tutorial-resources-training?cid=48`
+.. |link-postgresql-install-12.x| replace:: :iconlink:`ext|12.x|https://www.enterprisedb.com/software-downloads-postgres`
 
 .. |link-to-alyvix-install350| replace:: :iconlink:`ext|Alyvix 3.5.0|https://alyvix.com/learn/getting_started/install.html#versions`
 

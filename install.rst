@@ -101,14 +101,15 @@ The following steps will install Alyvix Service on your machine:
 
 .. rst-class:: bignums
 
-#. **Download the Alyvix Service installer**
+#. **Request an Alyvix Service subscription**
 
-   `Request an Alyvix Service License <https://alyvix.com/team>`_, including the (externally visible)
-   IP address you will connect to the server with.
+   Choose your `preferred subscription plan <https://alyvix.com/service#plans>`_ and get in touch with us
+   `to request it <https://alyvix.com/team>`_, providing a machine IP from where you will download the
+   software package.  You'll obtain access to `our repository <https://repo.wuerth-phoenix.com/alyvix-service/>`_.
 
 #. **Install Alyvix Core**
 
-   Follow `the installation instructions <https://www.alyvix.com/learn/getting_started/install.html>`_
+   Follow `the installation instructions <https://alyvix.com/learn/getting_started/install.html>`_
    for Python and Alyvix.
 
 #. **Install PostgreSQL**
@@ -130,10 +131,9 @@ The following steps will install Alyvix Service on your machine:
 
 #. **Install Alyvix Service**
 
-   When you receive your download credentials, log in to the `Alyvix Service Repository <https://repo.wuerth-phoenix.com/alyvix-service/>`_
-   and download the most recent version of the installer (:file:`alyvix_service_<version>.zip`). |br|
-   Run the :file:`setup.exe` installer which can be found in that :file:`.zip` file
-   :warn:`in administrator mode`. |br|
+   Download the most recent version of the installer (:file:`alyvix_service_<version>.zip`) from
+   `the repository <https://repo.wuerth-phoenix.com/alyvix-service/>`_, and run the :file:`setup.exe`
+   installer which can be found inside the .zip file :warn:`in administrator mode`. |br|
    Set the database password from step #3 as follows:
 
    * Open the file |config-file-location| :warn:`in administrator mode`
