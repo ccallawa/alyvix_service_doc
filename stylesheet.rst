@@ -82,12 +82,12 @@ Bulleted lists should:
 
         With indented text and images
 
-        .. image:: pictures/alyvix_logo_399x333.png
+        .. image:: pictures/alyvix_icon_white_100x100.png
            :width: 40pt
 
      And with non-indented text or images
 
-     .. image:: pictures/alyvix_logo_399x333.png
+     .. image:: pictures/alyvix_icon_white_100x100.png
         :width: 40pt
 
 There are also enumerated lists:
@@ -163,7 +163,7 @@ bottom of one column to the top of the other.)
 
    .. container:: rightside-col
 
-      .. image:: pictures/alyvix_logo_399x333.png
+      .. image:: pictures/alyvix_icon_white_100x100.png
          :width: 50pt
 
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
@@ -449,7 +449,7 @@ You can create aliases where you want, and use them repeatedly using the ``|<ali
 It does not matter where on the page you define it; it can even be placed at the bottom of the
 page.
 
-.. |logo| image:: pictures/alyvix_logo_399x333.png
+.. |logo| image:: pictures/alyvix_icon_white_100x100.png
    :align: middle
    :width: 30pt
    :height: 10pt
@@ -460,7 +460,7 @@ The code for the alias:
    :class: short-code-block
    :caption: Creating an alias for the text string ``|logo|``
 
-   .. |logo| image:: pictures/alyvix_logo_399x333.png
+   .. |logo| image:: pictures/alyvix_icon_white_100x100.png
       :align: middle
       :width: 30pt
       :height: 10pt
@@ -654,7 +654,7 @@ keyword will allow text to wrap around the sides; to place an image on the left 
 allowing wrapping on the right, just leave out the parameter altogether.  Clicking on the image
 in the browser will load the image by itself into the browser window.
 
-.. image:: pictures/alyvix_logo_399x333.png
+.. image:: pictures/alyvix_icon_white_100x100.png
    :width: 200px
    :align: center
    :height: 100px
@@ -667,7 +667,7 @@ This is built as follows:
    :caption: How to include a simple image
    :name: _style_image_example
 
-   .. image:: pictures/alyvix_logo_399x333.png
+   .. image:: pictures/alyvix_icon_white_100x100.png
       :width: 200px
       :align: center
       :height: 100px
@@ -679,7 +679,7 @@ as follows (note that figures and images have different options):
 .. code-block:: rst
    :class: short-code-block
 
-   .. image:: pictures/alyvix_logo_399x333.png
+   .. image:: pictures/alyvix_icon_white_100x100.png
       :class: image-boxshadow
 
 You can also make a more structured figure.  It assumes you want an image at the top with the
@@ -690,7 +690,7 @@ You can set an empty caption by using the standard ``..`` paragraph comment.  bu
 entire (indented) RST structure within the figure space.  You can add the class ``:class: outline``
 to the figure declaration and :file:`custom.css` will add a thin-lined box around the entire thing:
 
-.. figure:: pictures/alyvix_logo_399x333.png
+.. figure:: pictures/alyvix_icon_white_100x100.png
    :class: outline
    :scale: 40 %
    :align: center
@@ -703,7 +703,7 @@ to the figure declaration and :file:`custom.css` will add a thin-lined box aroun
 .. code-block:: rst
    :class: medium-code-block
 
-   .. figure:: pictures/alyvix_logo_399x333.png
+   .. figure:: pictures/alyvix_icon_white_100x100.png
       :class: outline
       :scale: 40 %
       :align: center
@@ -1263,7 +1263,7 @@ the linked page above for additional formatting options):
       There's hidden content above me
 
       ---
-      :img-top: pictures/alyvix_logo_399x333.png
+      :img-top: pictures/alyvix_icon_white_100x100.png
 
       Panel #5 with Image at Top
 
@@ -1623,7 +1623,7 @@ Let's create a background image, and then overlay some text on top of it:
 .. raw:: html
 
    <div class="demo-image">
-     <img src="_images/alyvix_logo_399x333.png" style="width:50%; height:50%;"/>
+     <img src="_images/alyvix_icon_white_100x100.png" style="width:50%; height:50%;"/>
      <div class="demo-text" height="100%">
        <br />
        <h1>Here is some Text</h1><br />
@@ -1639,7 +1639,7 @@ Let's create a background image, and then overlay some text on top of it:
    .. raw:: html
 
       <div class="demo-image">
-        <img src="_images/alyvix_logo_399x333.png" style="width:50%; height:50%;"/>
+        <img src="_images/alyvix_icon_white_100x100.png" style="width:50%; height:50%;"/>
         <div class="demo-text" height="100%">
           <br />
           <h1>Here is some Text</h1><br />

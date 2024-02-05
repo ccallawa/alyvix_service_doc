@@ -31,7 +31,7 @@
 }
 
 #content .document p a, #content .document div a {
-    color: #2980B9;
+    color: #B66DFF;
 }
 
 dl, ol, ul {
@@ -515,7 +515,7 @@ dl, ol, ul {
 #content .document .versionmodified.added,
 #content .document .versionmodified.added .version-new {
     background-color: rgba(10, 157, 129, 0.15);
-    color: #2980B9;
+    color: #B66DFF;
 }4
 
 #content .document .versionmodified.changed,

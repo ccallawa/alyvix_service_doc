@@ -1,3 +1,4 @@
+
 .highlight .nt {
     color: green;
 }
@@ -249,8 +250,8 @@ inline-image { /* Images inline with the text are a bit too low.  */
 
 /* Make guilabel (eventually) fit with the site style */
 .guilabel {
-    border: 1px solid #7fbbe3;
-    background: #e7f2fa !important;
+    border: 1px solid #DCB9FF;
+    background: #E8D1FF !important;
     font-size: 90%;
     font-weight: 800 !important;
     border-radius: 4px;
@@ -272,8 +273,8 @@ code.kbd, tt.kbd, kbd {
     text-shadow: 0 1px 0 #fff;
 }
 .deflabel {
-    border: 1px solid #7fbbe3;
-    background: #e7f2fa;
+    border: 1px solid #A042FF;
+    background: #DCB9FF;
     font-size: 90%;
     font-weight: 800;
     border-top-left-radius: 8px;
@@ -292,7 +293,7 @@ code.kbd, tt.kbd, kbd {
     text-decoration: underline;
 }
 .endpoint-red {  /* An inline warning rather than a box */
-    color: #2980B9;
+    color: #A042FF;
     font-size: 120%;
     font-weight: bold;
     font-family: monospace !important;
@@ -310,7 +311,7 @@ code.kbd, tt.kbd, kbd {
     font-family: monospace !important;
 }
 .endpoint-red-med {  /* An inline warning rather than a box */
-    color: #2980B9;
+    color: #A042FF;
     font-size: 105%;
     font-weight: bold;
     font-family: monospace !important;
@@ -465,17 +466,21 @@ table.docutils tbody tr:nth-child(2n-1) td {
     background-color: #f3f6f6;
 }
 table.docutils tbody tr:first-child td {
-    background-color: #2980B9 !important;
+    background-color: #B66DFF !important;
     border: 1px solid #e1e4e5 !important;
 }
 table.docutils tbody tr:first-child td p {
     color: white !important;
+}
+#content .document p a {
+    color: #B66DFF;
 }
 
 table.table-body-no-borders {
     border: none !important;
 }
 table.table-body-no-borders tbody tr td {
+    background-color: #B66DFF !important;
     vertical-align: top !important;
     padding: 20px 20px 20px 20px !important;
     border: none !important;
@@ -552,18 +557,18 @@ table.tablecell-endpoint tbody tr {
 }
 table.tablecell-endpoint tbody tr td {
     border: none !important;
-    background-color: #dff !important;
+    background-color: #E8D1FF !important;
     padding: 20px 20px 2px 20px !important;
 }
 table.tablecell-endpoint tbody tr:nth-child(2n-1) td {
     border: none !important;
-    background-color: #dff !important;
+    background-color: #E8D1FF !important;
     padding: 2px 20px 10px 20px !important;
 }
 table.tablecell-endpoint tbody tr:first-child td {
     padding: 20px 20px 20px 20px !important;
     margin-bottom: 20px !important;
-    background-color: #2980B9 !important;
+    background-color: #B66DFF !important;
     border: none !important;
 }
 
@@ -605,12 +610,15 @@ code.file span.pre {
     font-family: Consolas,Courier;
     font-size: 125%;
 }
+#content code.literal {
+    color: #DCB9FF;
+}
 
 
 /* Scroll bar improvements for Chrome, Safari and Edge */
 div.highlight pre {
     overflow-x: scroll !important;
-    scrollbar-color: #2980B9 #fff !important;
+    scrollbar-color: #B66DFF #fff !important;
     scrollbar-width:  thin !important;
 }
 div.highlight pre::-webkit-scrollbar {
@@ -619,13 +627,13 @@ div.highlight pre::-webkit-scrollbar {
 div.highlight pre::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,0.3); !important
     border-radius: 10px !important;
-    background-color: #2980B9 !important;
+    background-color: #B66DFF !important;
 }
 div.highlight pre::-webkit-scrollbar-thumb:hover {
-    background-color: #2980B9 !important;
+    background-color: #B66DFF !important;
 }
 div.highlight pre::-webkit-scrollbar-thumb:active {
-    background-color: #2980B9 !important;
+    background-color: #B66DFF !important;
 }
 div.highlight pre::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,0.3) !important;
@@ -707,7 +715,7 @@ a:visited .fa::before {
 }
 */
 .fa-blue::before {   /* The same blue as the RTD theme */
-    color: #2980B9;
+    color: #B66DFF;
 }
 .fa-black::before {
     color: black;    /* Override the blue color when necessary */
@@ -768,13 +776,13 @@ div.accordion {
 
 /* For the Sphinx-Panels extension */
 .bg-alyvix-primary {
-  background-color: #2980B9 !important;
+  background-color: #B66DFF !important;
 }
 .bg-alyvix-outline-primary {
-  background-color: #2980B9 !important;
+  background-color: #B66DFF !important;
 }
 .badge-alyvix-primary {
-  background-color: #2980B9 !important;
+  background-color: #B66DFF !important;
   color: #fff;
 }
 
@@ -856,4 +864,12 @@ img.pivotal-icon-width {
 .col.right-column {
   padding-left:  10px !important;
   padding-right:  10px !important;
+}
+
+#local-roc-nav a.active {
+    color: #CB97FF!important;
+}
+
+#nav-link a.active {
+    color: #CB97FF!important;
 }

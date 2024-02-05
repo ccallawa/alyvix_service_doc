@@ -122,7 +122,7 @@ html_css_files = [
 
 html_title = "%s" %(project)
 html_logo = 'pictures/alyvix_icon_white_100x100.png'
-html_favicon = 'pictures/alyvix_icon_100x107.png'
+html_favicon = 'pictures/alyvix_favicon.png'
 
 html_output_encoding = 'utf-8'
 
