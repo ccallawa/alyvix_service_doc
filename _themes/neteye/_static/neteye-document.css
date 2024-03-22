@@ -31,7 +31,7 @@
 }
 
 #content .document p a, #content .document div a {
-    color: #B66DFF;
+    color: #972EFF;
 }
 
 dl, ol, ul {
@@ -155,7 +155,7 @@ dl, ol, ul {
 }
 
 .admonition a {
-    color: #0BB798;
+    color: #08BDBA;
     text-decoration: underline;
 }
 
@@ -174,11 +174,11 @@ dl, ol, ul {
 }
 
 .admonition.note {
-    border-left-color: #0BB798 !important;
+    border-left-color: #08BDBA !important;
 }
 
 .admonition.note .admonition-title {
-    color: #0BB798 !important;
+    color: #08BDBA !important;
 }
 
 .admonition.hint,
@@ -361,7 +361,7 @@ dl, ol, ul {
     padding: 8px 0;
     align-items: center;
     background-color: transparent;
-    color: #0BB798;
+    color: #08BDBA;
     font-family: 'IBMPlexMono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
     font-size: 12px;
     font-weight: 400;
@@ -515,7 +515,7 @@ dl, ol, ul {
 #content .document .versionmodified.added,
 #content .document .versionmodified.added .version-new {
     background-color: rgba(10, 157, 129, 0.15);
-    color: #B66DFF;
+    color: #972EFF;
 }4
 
 #content .document .versionmodified.changed,
