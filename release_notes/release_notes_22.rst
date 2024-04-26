@@ -17,7 +17,7 @@ Version 2.2.0
 =============
 
 Alyvix Service is a software tool for scaling up the management of instances of the Alyvix
-visual monitoring system.  All you need is a compatible database and monitoring system that
+synthetic monitoring system.  All you need is a compatible database and monitoring system that
 can link the Alyvix Service API with its own GUI and host model.
 
 

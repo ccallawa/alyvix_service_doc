@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 19-07-2023
+:modified: 26-04-2024
 :tags: index
 :lang: en-US
 :translation: false
@@ -16,13 +16,13 @@
 Alyvix Service Overview
 #######################
 
-Welcome to the user guide for **Alyvix Service 2.3.0**.
+Welcome to the user guide for **Alyvix Service 2.4.1**.
 
 Alyvix Service builds on the `open source Alyvix project <https://alyvix.com/>`_ (**Alyvix Core**).
 which lets you build end-user bots that visually interact with any Windows application like ERPs,
 or any web app in your favorite browser.
 
-**Alyvix Service** lets you scale up visual monitoring by managing all of your Alyvix test cases at
+**Alyvix Service** lets you scale up synthetic monitoring by managing all of your Alyvix test cases at
 a single point in your own monitoring system.  You can schedule end-user bots continuously and
 in parallel, while keeping your Windows RDP sessions up and running.  It helps you report
 end-user experiences by retrieving the test case measurements and screenshots, and retaining

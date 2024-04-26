@@ -17,7 +17,7 @@ Version 2.0.0
 =============
 
 Alyvix Service is a software tool for scaling up the management of instances of the Alyvix
-visual monitoring system.  All you need is a compatible monitoring system that can link the
+synthetic monitoring system.  All you need is a compatible monitoring system that can link the
 Alyvix Service API with its own GUI and host model.
 
 
@@ -33,7 +33,7 @@ to schedule and run test cases, and retrieve data and reports from those runs.
 **New Features**
 
 * **Session Management:**  Alyvix Service helps you organize the global parameters like credentials,
-  test case paths, and screen resolutions that you need to centrally manage your visual monitoring
+  test case paths, and screen resolutions that you need to centrally manage your synthetic monitoring
   setup.  It keeps all of your Windows Server sessions alive and active, ensuring that your test
   cases can continue to run indefinitely.
 

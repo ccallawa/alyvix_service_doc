@@ -1,5 +1,5 @@
 :author: Charles Callaway
-:date: 09-14-203
+:date: 09-14-2023
 :modified: 09-14-2023
 :tags: release notes
 :lang: en-US
@@ -17,7 +17,7 @@ Version 2.3.0
 =============
 
 Alyvix Service is a software tool for scaling up the management of instances of the Alyvix
-visual monitoring system.  All you need is a compatible database and monitoring system that
+synthetic monitoring system.  All you need is a compatible database and monitoring system that
 can link the Alyvix Service API with its own GUI and host model.
 
 

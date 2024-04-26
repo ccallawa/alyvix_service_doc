@@ -44,7 +44,7 @@ an Alyvix Node.
 
 .. rubric:: Installing the Alyvix-NetEye module
 
-Here we lay out the reasons why you should use Visual Monitoring to keep tabs on the performance
+Here we lay out the reasons why you should use Synthetic Monitoring to keep tabs on the performance
 of your Outlook clients.  The video describes the IT benefits of using Alyvix Service in an implemented
 use case at an IT company that extensively uses Microsoft's email, calendar and contacts
 application to keep its employees and customers communicating smoothly.

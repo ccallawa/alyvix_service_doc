@@ -79,13 +79,15 @@ Versions
 +-----------------------------------+----------------------------------+---------------------------------+
 | Alyvix Service Version            | Required Alyvix Core Version     | PostgreSQL Version              |
 +-----------------------------------+----------------------------------+---------------------------------+
-| Alyvix Service 2.3.0              | |link-to-alyvix-install350|      | |link-postgresql-install-12.x|  |
+| Alyvix Service 2.4.x              | |link-to-alyvix-install35x|      | |link-postgresql-install-12.x|  |
 +-----------------------------------+----------------------------------+---------------------------------+
-| Alyvix Service 2.2.0              | |link-to-alyvix-install350|      | |link-postgresql-install-12.x|  |
+| Alyvix Service 2.3.x              | |link-to-alyvix-install35x|      | |link-postgresql-install-12.x|  |
 +-----------------------------------+----------------------------------+---------------------------------+
-| Alyvix Service 2.1.0              | |link-to-alyvix-install340|      | |link-postgresql-install-12.x|  |
+| Alyvix Service 2.2.x              | |link-to-alyvix-install35x|      | |link-postgresql-install-12.x|  |
 +-----------------------------------+----------------------------------+---------------------------------+
-| Alyvix Service 2.0.0              | |link-to-alyvix-install332|      | |link-postgresql-install-12.x|  |
+| Alyvix Service 2.1.x              | |link-to-alyvix-install34x|      | |link-postgresql-install-12.x|  |
++-----------------------------------+----------------------------------+---------------------------------+
+| Alyvix Service 2.0.x              | |link-to-alyvix-install33x|      | |link-postgresql-install-12.x|  |
 +-----------------------------------+----------------------------------+---------------------------------+
 
 |
@@ -190,7 +192,7 @@ The following steps will upgrade Alyvix Service to the latest version on your ma
    * Back up your Alyvix Service HTTPS certificate:  :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\cert\\`
    * Back up your Alyvix Service JSON Web Token (JWT) certificate:  :file:`C:\\ProgramData\\Alyvix\\certs\\jwt\\`
    * Stop Alyvix Service:  **Windows Services > Alyvix Service > Stop**
-   * Close all Alyvix client windows (where appropriate)
+   * Close all Alyvix Client windows (where appropriate)
    * Uninstall Alyvix Service:  **Windows Control Panel > Programs and Features > Alyvix Service > Uninstall**
    * Remove residual Alyvix Service files (where appropriate):  :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\`
    * Remove old Alyvix Client scheduled tasks:  **Windows Task Scheduler > alyvix_client<..> > delete**
