@@ -1,6 +1,6 @@
 :author: Charles Callaway
-:date: 22-09-2020
-:modified: 26-04-2024
+:date: 11-04-2024
+:modified: 30-04-2024
 :tags: index
 :lang: en-US
 :translation: false
@@ -16,7 +16,7 @@
 Alyvix Service Overview
 #######################
 
-Welcome to the user guide for **Alyvix Service 2.4.1**.
+Welcome to the user guide for Alyvix Service |version|.
 
 Alyvix Service builds on the `open source Alyvix project <https://alyvix.com/>`_ (**Alyvix Core**).
 which lets you build end-user bots that visually interact with any Windows application like ERPs,

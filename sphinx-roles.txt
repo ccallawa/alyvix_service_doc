@@ -13,11 +13,9 @@
 
 .. |config-file-location| replace:: :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\config.json`
 
-.. |python-download-link| replace:: :download:`64-bit Windows installer for Python version 3.7.9 <https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe>`
-
-.. |python-remove-name| replace:: :file:`Python 3.7.9 (64-bit)`
-
 .. |link-postgresql-install-12.x| replace:: :iconlink:`ext|12.x|https://www.enterprisedb.com/software-downloads-postgres`
+
+.. |link-to-alyvix-install36x| replace:: :iconlink:`ext|Alyvix 3.6.x|https://alyvix.com/learn/getting_started/install.html#versions`
 
 .. |link-to-alyvix-install35x| replace:: :iconlink:`ext|Alyvix 3.5.x|https://alyvix.com/learn/getting_started/install.html#versions`
 

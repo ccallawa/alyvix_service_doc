@@ -31,4 +31,5 @@ execution runs, successful or not.
    :name: toc_getting_started
 
    install.rst
+   troubleshooting.rst
    video_tutorials.rst

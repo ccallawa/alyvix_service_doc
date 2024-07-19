@@ -30,17 +30,19 @@ Alyvix release follows the :iconlink:`ext|Semantic Versioning|https://semver.org
 
 Alyvix Service releases:
 
-* :ref:`Version 2.4.x <release_notes_v2_4_0>` |halftab| April 11th, 2024 - Current
-* :ref:`Version 2.3.0 <release_notes_v2_3_0>` |halftab| September 14th, 2023
-* :ref:`Version 2.2.0 <release_notes_v2_2_0>` |halftab| September 7th, 2023
-* :ref:`Version 2.1.0 <release_notes_v2_1_0>` |halftab| July 19th, 2023
-* :ref:`Version 2.0.0 <release_notes_v2_0_0>` |halftab| December 6th, 2022
+* :ref:`Version 2.5.x <release_notes_v2_5>` |halftab| July 18th, 2024 - Current
+* :ref:`Version 2.4.x <release_notes_v2_4>` |halftab| April 11th, 2024 - April 30th, 2024
+* :ref:`Version 2.3.0 <release_notes_v2_3>` |halftab| September 14th, 2023
+* :ref:`Version 2.2.0 <release_notes_v2_2>` |halftab| September 7th, 2023
+* :ref:`Version 2.1.0 <release_notes_v2_1>` |halftab| July 19th, 2023
+* :ref:`Version 2.0.0 <release_notes_v2_0>` |halftab| December 6th, 2022
 
 
 .. toctree::
    :maxdepth: 2
    :name: toc_test
 
+   release_notes/release_notes_25.rst
    release_notes/release_notes_24.rst
    release_notes/release_notes_23.rst
    release_notes/release_notes_22.rst

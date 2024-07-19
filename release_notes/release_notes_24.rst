@@ -1,6 +1,6 @@
 :author: Charles Callaway
-:date: 04-11-2024
-:modified: 04-11-2024
+:date: 07-18-2024
+:modified: 07-18-2024
 :tags: release notes
 :lang: en-US
 :translation: false
@@ -12,13 +12,30 @@
 
 .. _release_notes_v2_4:
 
-=======================
-Version 2.4.0 - Current
-=======================
+=====================
+Version 2.4.0 - 2.4.2
+=====================
 
 Alyvix Service is a software tool for scaling up the management of instances of the Alyvix
 synthetic monitoring system.  All you need is a compatible database and monitoring system that
 can link the Alyvix Service API with its own GUI and host model.
+
+|
+
+
+.. _release_notes_v2_4_2:
+
+.. rubric:: Alyvix Service Version 2.4.2
+
+**Release date:**  April 30th, 2024
+
+This release of Alyvix Service v2.4.2 speeds up the Session status display.
+
+**Improvements**
+
+* **Session status inconsistency:**  We refactored Alyvix Service to provide session status
+  (i.e., *disconnected*, *connected*, *waiting*, *running*) more consistently with reality,
+  so that the status is updated and shown accurately within integrated GUIs
 
 |
 

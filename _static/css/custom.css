@@ -873,3 +873,11 @@ img.pivotal-icon-width {
 #nav-link a.active {
     color: #CB97FF!important;
 }
+
+details.width-wide {
+  width: 120%;
+  max-width: 1000px;
+}
+summary.bg-alyvix-purple {
+  background-color: #AC58FF !important;
+}
