@@ -148,7 +148,7 @@ The following steps will install Alyvix Service on your machine:
 
    First save your HTTPS certificate files used for browser security as follows:
 
-   * Create the folder :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\cert\\`
+   * Create the folder :file:`C:\\ProgramData\\Alyvix\\certs\\webserver\\`
    * Save :file:`cert.crt` as an HTTPS certificate recognized by your CA
    * Save :file:`cert.key` as its (unprotected) password
 
@@ -191,8 +191,8 @@ The following steps will upgrade Alyvix Service to the latest version on your ma
 #. Uninstall the current version of Alyvix Service
 
    * Back up your Alyvix Service configuration file:  |config-file-location|
-   * Back up your Alyvix Service HTTPS certificate:  :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\cert\\`
-   * Back up your Alyvix Service JSON Web Token (JWT) certificate:  :file:`C:\\ProgramData\\Alyvix\\certs\\jwt\\`
+   * Back up your Alyvix Service tenant roles file:  |mapping-file-location|
+   * Back up your security certificate directory:  |security-directory-location|
    * Stop Alyvix Service:  **Windows Services > Alyvix Service > Stop**
    * Close all Alyvix Client windows (where appropriate)
    * Uninstall Alyvix Service:  **Windows Control Panel > Programs and Features > Alyvix Service > Uninstall**
@@ -206,14 +206,11 @@ The following steps will upgrade Alyvix Service to the latest version on your ma
 #. Install the new version of Alyvix Service
 
    * Run the Alyvix Service Installer (:file:`setup.exe`) found in the Alyvix Service package
-   * Set the database password by editing the file |config-file-location| in administrator mode
-     (or by restoring the backup file): |br1|
-     ``"database":{.. "password": "<your_password>", ..}``
-   * Install your HTTPS certificate (or restore the backup files):  Save the :file:`cert.crt` and
-     :file:`cert.key` files in :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\cert\\`
-   * Install your JSON Web Token (JWT) certificate (or resture the backup file):  Save the
-     :file:`public.pem` file in :file:`C:\\ProgramData\\Alyvix\\certs\\jwt\\`
+   * Restore the two backup files and the directory you made in step #1:
 
+     * |config-file-location|
+     * |mapping-file-location|
+     * |security-directory-location|
 
 #. Run Alyvix Service
 
