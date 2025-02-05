@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 07-18-2024
-:modified: 07-18-2024
+:modified: 07-29-2024
 :tags: release notes
 :lang: en-US
 :translation: false
@@ -12,15 +12,47 @@
 
 .. _release_notes_v2_5:
 
-=======================
-Version 2.5.0 - Current
-=======================
+=====================
+Version 2.5.0 - 2.5.3
+=====================
 
 Alyvix Service is a software tool for scaling up the management of instances of the Alyvix
 synthetic monitoring system.  All you need is a compatible database and monitoring system that
 can link the Alyvix Service API with its own GUI and host model.
 
 |
+
+.. _release_notes_v2_5_3:
+
+.. rubric:: Alyvix Service Version 2.5.3
+
+**Release date:**  August 19th, 2024
+
+This release of Alyvix Service v2.5.3 is a bugfix.
+
+**Bug Fixes**
+
+* Some test cases would no longer run on Alyvix Service web API v2 (just on v3).
+
+|
+
+
+
+.. _release_notes_v2_5_2:
+
+.. rubric:: Alyvix Service Version 2.5.2
+
+**Release date:**  July 29th, 2024
+
+This release of Alyvix Service v2.5.2 is a bugfix.
+
+**Bug Fixes**
+
+* The path to run test case files in multi-tenant environments was incorrectly built
+
+|
+
+
 
 .. _release_notes_v2_5_1:
 
