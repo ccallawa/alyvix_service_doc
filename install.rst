@@ -79,6 +79,8 @@ Versions
 +-----------------------------------+----------------------------------+---------------------------------+--------------------+
 | Alyvix Service Version            | Required Alyvix Core Version     | PostgreSQL Version              | Alyvix API Version |
 +-----------------------------------+----------------------------------+---------------------------------+--------------------+
+| Alyvix Service 2.6.x              | |link-to-alyvix-install36x|      | |link-postgresql-install-12.x|  | 3, 4               |
++-----------------------------------+----------------------------------+---------------------------------+--------------------+
 | Alyvix Service 2.5.x              | |link-to-alyvix-install36x|      | |link-postgresql-install-12.x|  | 0, 1, 2, 3         |
 +-----------------------------------+----------------------------------+---------------------------------+--------------------+
 | Alyvix Service 2.4.x              | |link-to-alyvix-install35x|      | |link-postgresql-install-12.x|  | 0, 1, 2            |
@@ -188,15 +190,22 @@ The following steps will upgrade Alyvix Service to the latest version on your ma
 
 .. rst-class:: bignums
 
+#. Back up your existing configuration
+
+   * If you're upgrading from version 2.4.x or earlier, create the subdirectory :file:`webserver\\`
+     within :file:`C:\\ProgramData\\Alyvix\\certs\\` and move :file:`cert.crt` and :file:`cert.key`
+     to the new subdirectory (before version 2.6.0 these files may be in :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\`)
+   * Now back up the entire security certificate directory: |br1|  |security-directory-location|
+   * Then back up your Alyvix Service configuration file: |br1|  |config-file-location|
+   * And back up your Alyvix Service tenant roles file: |br1|  |mapping-file-location|
+
 #. Uninstall the current version of Alyvix Service
 
-   * Back up your Alyvix Service configuration file:  |config-file-location|
-   * Back up your Alyvix Service tenant roles file:  |mapping-file-location|
-   * Back up your security certificate directory:  |security-directory-location|
    * Stop Alyvix Service:  **Windows Services > Alyvix Service > Stop**
    * Close all Alyvix Client windows (where appropriate)
    * Uninstall Alyvix Service:  **Windows Control Panel > Programs and Features > Alyvix Service > Uninstall**
-   * Remove residual Alyvix Service files (where appropriate):  :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\`
+   * Remove residual Alyvix Service files (when appropriate):  :file:`C:\\ProgramData\\Alyvix\\`
+     (:file:`C:\\Program Files\\Alyvix\\Alyvix Service\\` for versions before 2.6.0)
    * Remove old Alyvix Client scheduled tasks:  **Windows Task Scheduler > alyvix_client<..> > delete**
 
 #. Upgrade Alyvix Core

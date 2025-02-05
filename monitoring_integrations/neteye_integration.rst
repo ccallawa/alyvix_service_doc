@@ -18,7 +18,7 @@ NetEye 4 Integration
 
 Alyvix Service fully integrates with
 `NetEye  4 <https://neteye.guide/current/introduction/product-overview.html>`_ via the
-:ref:`Alyvix Service API <alyvix_service_restful_api_top>`,
+:ref:`Alyvix Service API <alyvix_service_restful_apis_top>`,
 allowing you to incorporate your Alyvix Nodes into your monitoring network just
 as if they were any other server, and see the results of your Alyvix runs
 in the standard NetEye 4 dashboards.

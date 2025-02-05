@@ -15,7 +15,7 @@
 
    introduction.rst
    getting_started.rst
-   full_restful_api.rst
+   restful_apis.rst
    monitoring_integrations.rst
    release_notes.rst
    Alyvix User Manual <https://alyvix.com/learn/>

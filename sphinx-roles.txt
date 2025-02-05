@@ -11,9 +11,9 @@
    :width: 38
    :class: no-scaled-link
 
-.. |config-file-location| replace:: :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\config.json`
+.. |config-file-location| replace:: :file:`C:\\ProgramData\\Alyvix\\config.json`
 
-.. |mapping-file-location| replace:: :file:`C:\\Program Files\\Alyvix\\Alyvix Service\\mapping.json`
+.. |mapping-file-location| replace:: :file:`C:\\ProgramData\\Alyvix\\mapping.json`
 
 .. |security-directory-location| replace:: :file:`C:\\ProgramData\\Alyvix\\certs\\`
 

@@ -294,13 +294,13 @@ code.kbd, tt.kbd, kbd {
 }
 .endpoint-red {  /* An inline warning rather than a box */
     color: #972EFF;
-    font-size: 120%;
+    font-size: 110%;
     font-weight: bold;
     font-family: monospace !important;
 }
 .endpoint-black {  /* An inline warning rather than a box */
     color: black;
-    font-size: 120%;
+    font-size: 110%;
     font-weight: bold;
     font-family: monospace !important;
 }
@@ -323,7 +323,7 @@ code.kbd, tt.kbd, kbd {
     font-family: monospace !important;
 }
 .large-font-size {
-    font-size: 120%;
+    font-size: 105%;
     font-weight: bold;
 }
 .lightgrey {  /* An inline light gray, e.g. for hints */
